@@ -18,41 +18,13 @@ STATIC_PATH = ROOT / "static"
 DIST_PATH = ROOT / "dist"
 
 CATEGORIES = [
-    (
-        "global",
-        "Global scale",
-        "Counts, trends, and research libraries that establish the size of human use of animals.",
-    ),
-    (
-        "sentience",
-        "Sentience and moral status",
-        "Evidence and conceptual foundations for understanding which beings can have experiences.",
-    ),
-    (
-        "farmed",
-        "Farmed-animal welfare",
-        "Research that measures the intensity, duration, and prevalence of lived experience.",
-    ),
-    (
-        "aquatic",
-        "Aquatic animals",
-        "Work that makes individuals visible in systems usually reported as biomass or tonnage.",
-    ),
-    (
-        "wild",
-        "Wild-animal welfare",
-        "An emerging field concerned with how free-living individuals fare, not only whether species persist.",
-    ),
-    (
-        "research",
-        "Animals used in research",
-        "Official records of scientific procedures, including purpose and experienced severity.",
-    ),
-    (
-        "future",
-        "Visions of the future",
-        "Developed proposals for extending moral concern and using future technology to improve sentient life.",
-    ),
+    ("global", "Global scale"),
+    ("sentience", "Sentience and moral status"),
+    ("farmed", "Farmed-animal welfare"),
+    ("aquatic", "Aquatic animals"),
+    ("wild", "Wild-animal welfare"),
+    ("research", "Animals used in research"),
+    ("future", "Possible futures"),
 ]
 
 REQUIRED_FIELDS = {
@@ -101,62 +73,28 @@ def validate(catalog: dict) -> None:
         domains.add(entry["domain"])
 
 
-def render_references(references: list[dict[str, str]]) -> str:
-    links = "".join(
-        f'<li><a href="{e(ref["url"])}">{e(ref["label"])}<span aria-hidden="true">↗</span></a></li>'
-        for ref in references
-    )
-    return f"<ul class=\"reference-list\">{links}</ul>"
-
-
-def render_card(entry: dict, index: int) -> str:
+def render_source(entry: dict) -> str:
     return f"""
-<article class="source-card" id="source-{e(entry['id'])}">
-  <div class="source-number" aria-hidden="true">{index}</div>
-  <div class="source-copy">
-    <h3><a href="{e(entry['url'])}">{e(entry['name'])}<span aria-hidden="true">↗</span></a></h3>
-    <p class="source-meta">{e(entry['domain'])} · {e(entry['evidence_type'])}</p>
-    <p class="summary">{e(entry['summary'])}</p>
-    <details>
-      <summary>Why this source is useful</summary>
-      <div class="source-notes">
-        <p><strong>Use it for:</strong> {e(entry['usefulness'])}</p>
-        <p><strong>Keep in mind:</strong> {e(entry['caveat'])}</p>
-        <p><strong>Scope:</strong> {e(', '.join(entry['taxa']))}</p>
-        <p><strong>Access:</strong> {e(entry['access'])}</p>
-        <p><strong>Source rights:</strong> {e(entry['reuse'])}</p>
-        <div class="source-references"><strong>Good places to begin:</strong>{render_references(entry['references'])}</div>
-      </div>
-    </details>
-  </div>
-</article>""".strip()
+<li class="source-item" id="source-{e(entry['id'])}">
+  <h4><a href="{e(entry['url'])}">{e(entry['name'])}</a><span class="source-domain">{e(entry['domain'])}</span></h4>
+  <p>{e(entry['summary'])}</p>
+</li>""".strip()
 
 
 def render_sections(entries: list[dict]) -> str:
     result: list[str] = []
-    source_index = 0
-    for category_id, title, description in CATEGORIES:
+    for category_id, title in CATEGORIES:
         category_entries = [entry for entry in entries if entry["category"] == category_id]
         if not category_entries:
             continue
-        cards = []
-        for entry in category_entries:
-            source_index += 1
-            cards.append(render_card(entry, source_index))
-        cards_block = "\n".join(cards)
+        sources = "\n".join(render_source(entry) for entry in category_entries)
         result.append(
             f"""
-<section class="directory-section" id="sources-{e(category_id)}">
-  <header class="section-heading">
-    <div>
-      <h2>{e(title)}</h2>
-      <p>{e(description)}</p>
-    </div>
-    <span class="section-count">{len(category_entries)} {'source' if len(category_entries) == 1 else 'sources'}</span>
-  </header>
-  <div class="source-list">
-    {cards_block}
-  </div>
+<section class="source-section" id="sources-{e(category_id)}">
+  <h3>{e(title)}</h3>
+  <ul class="source-list">
+    {sources}
+  </ul>
 </section>""".strip()
         )
     return "\n".join(result)
@@ -248,23 +186,24 @@ def write_llms_txt(catalog: dict) -> None:
     lines = [
         f"# {catalog['name']}",
         "",
-        "> An original, curated guide to evidence about animal welfare and sentient experience.",
+        "> Evidence about animal welfare and sentient experience.",
         "",
-        "The directory links primarily to root domains. Summaries are original and do not reproduce source-site content. Empirical evidence is kept separate from normative or speculative ideas about the future.",
+        "Primary links point to root domains. Source descriptions are original and do not reproduce linked content.",
         "",
         "## Data files",
         "",
         f"- [JSON catalog]({catalog['site_url']}/catalog.json): Complete structured catalog.",
-        f"- [CSV catalog]({catalog['site_url']}/catalog.csv): Flat export of the same original catalog metadata.",
-        f"- [Method]({catalog['site_url']}/#method): Inclusion, evidence, and reuse notes.",
+        f"- [CSV catalog]({catalog['site_url']}/catalog.csv): Flat export of the catalog metadata.",
         "",
         "## Selected domains",
         "",
     ]
-    category_titles = {category[0]: category[1] for category in CATEGORIES}
+    category_titles = dict(CATEGORIES)
     current_category = None
     for entry in catalog["entries"]:
         if entry["category"] != current_category:
+            if current_category is not None:
+                lines.append("")
             current_category = entry["category"]
             lines.extend([f"### {category_titles[current_category]}", ""])
         lines.append(f"- [{entry['name']}]({entry['url']}): {entry['summary']}")
@@ -289,10 +228,6 @@ def main() -> None:
     evidence_count = len(catalog["entries"]) - counts["future"]
     replacements = {
         "{{SITE_URL}}": catalog["site_url"],
-        "{{UPDATED}}": catalog["updated"],
-        "{{TOTAL_COUNT}}": str(len(catalog["entries"])),
-        "{{EVIDENCE_COUNT}}": str(evidence_count),
-        "{{FUTURE_COUNT}}": str(counts["future"]),
         "{{CATALOG_SECTIONS}}": render_sections(catalog["entries"]),
         "{{JSON_LD}}": make_json_ld(catalog),
     }
