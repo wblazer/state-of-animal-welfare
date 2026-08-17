@@ -1,8 +1,8 @@
-# Animal Welfare Atlas
+# The State of Animal Welfare
 
-An editorial guide to animal sentience, the scale and character of animal suffering, the largest gaps in what humanity measures, and visions of a better future. A curated, machine-readable source library supports the narrative.
+Evidence about animal sentience, animal suffering, and possible futures for sentient life.
 
-The primary links are root domains. All summaries are original; the project does not mirror content from linked websites.
+Primary links point to root domains. Summaries are original; linked content is not copied.
 
 ## Build and run
 

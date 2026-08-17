@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the dependency-free static Animal Welfare Atlas."""
+"""Build the dependency-free static State of Animal Welfare site."""
 
 from __future__ import annotations
 

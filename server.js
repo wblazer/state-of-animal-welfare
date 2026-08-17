@@ -43,4 +43,4 @@ Bun.serve({
   },
 });
 
-console.log(`Animal Welfare Atlas listening on port ${port}`);
+console.log(`The State of Animal Welfare listening on port ${port}`);
