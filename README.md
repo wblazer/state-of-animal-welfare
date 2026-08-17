@@ -2,7 +2,7 @@
 
 Evidence about animal sentience, animal suffering, and possible futures for sentient life.
 
-Primary links point to root domains. Summaries are original; linked content is not copied.
+Primary links point to the most relevant durable site or page. Summaries are original; linked content is not copied.
 
 ## Build and run
 

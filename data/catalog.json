@@ -101,38 +101,34 @@
     },
     {
       "id": "pmc",
-      "name": "PubMed Central",
+      "name": "Searching for Animal Sentience",
       "domain": "pmc.ncbi.nlm.nih.gov",
-      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/",
       "category": "sentience",
-      "summary": "The U.S. National Library of Medicine’s full-text archive of biomedical and life-science research. It contains open-access reviews and studies on pain, cognition, affective states, welfare indicators, and animal consciousness across many taxa.",
-      "usefulness": "Full article text, references, figures, and machine-readable records from the scientific literature.",
-      "caveat": "Coverage is biomedical, not welfare-specific. Inclusion in the archive does not establish the quality of a study or its claims.",
-      "topics": ["sentience", "pain", "cognition", "welfare science", "scientific literature"],
+      "summary": "This systematic review examined 2,562 studies published from 1990 to 2012. Nearly all assumed that the animals had the sentience-related trait or emotion under study; only 16 investigated whether the trait existed. The literature strongly favored vertebrates and negative states such as fear, stress, and pain.",
+      "usefulness": "Evidence that scientists routinely measure animal affective states, together with a map of major gaps in research on positive states and invertebrates.",
+      "caveat": "The review searched two databases, examined abstracts rather than full papers, and covers literature only through mid-2012.",
+      "topics": ["sentience", "emotion", "pain", "welfare science", "systematic review"],
       "taxa": ["vertebrates", "invertebrates"],
-      "evidence_type": "Full-text scientific literature archive",
-      "access": "HTML, XML, APIs and bulk services",
-      "reuse": "Article-level licenses vary; PMC access does not make every article unrestricted.",
+      "evidence_type": "Systematic review",
+      "access": "Full-text HTML, PDF and article metadata",
+      "reuse": "Open-access article; see the article page for license terms.",
       "references": [
         {
-          "label": "PMC article datasets",
-          "url": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/"
-        },
-        {
-          "label": "Searching for Animal Sentience: a systematic review",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/"
+          "label": "PubMed record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26479539/"
         }
       ]
     },
     {
       "id": "stanford-encyclopedia",
-      "name": "Stanford Encyclopedia of Philosophy",
+      "name": "Animal Consciousness, Stanford Encyclopedia of Philosophy",
       "domain": "plato.stanford.edu",
-      "url": "https://plato.stanford.edu/",
+      "url": "https://plato.stanford.edu/entries/consciousness-animal/",
       "category": "sentience",
-      "summary": "A scholar-maintained reference work with careful entries on animal consciousness, animal moral status, pain, ethics, and the philosophy of mind. Articles map arguments, terminology, and disagreements to extensive bibliographies.",
-      "usefulness": "Introductions to the arguments and terminology surrounding sentience and moral status.",
-      "caveat": "This is a philosophy reference. Its entries synthesize debates and do not provide animal counts or welfare measurements.",
+      "summary": "This scholar-maintained entry surveys animal consciousness, from the meaning of sentience to the evidence used to identify it across species. It covers the history of the debate, current scientific methods, competing views, ethical stakes, and an extensive bibliography.",
+      "usefulness": "A current introduction to the arguments, terminology, and evidence surrounding animal consciousness.",
+      "caveat": "This is a philosophical synthesis of an unsettled interdisciplinary field, not a direct welfare measurement or animal count.",
       "topics": ["consciousness", "moral status", "ethics", "philosophy of mind"],
       "taxa": ["animals broadly"],
       "evidence_type": "Academic reference work",
@@ -140,8 +136,8 @@
       "reuse": "Free to read but copyrighted; follow Stanford’s terms for reuse.",
       "references": [
         {
-          "label": "Animal consciousness",
-          "url": "https://plato.stanford.edu/entries/consciousness-animal/"
+          "label": "Evidence concerning animal consciousness",
+          "url": "https://plato.stanford.edu/entries/consciousness-animal/evidence.html"
         },
         {
           "label": "The moral status of animals",
@@ -153,20 +149,20 @@
       "id": "animal-sentience-journal",
       "name": "Animal Sentience",
       "domain": "wellbeingintlstudiesrepository.org",
-      "url": "https://www.wellbeingintlstudiesrepository.org/",
+      "url": "https://www.wellbeingintlstudiesrepository.org/animsent/",
       "category": "sentience",
-      "summary": "An open repository that hosts the journal Animal Sentience alongside a broader collection of human–animal studies. The journal pairs target articles with many expert commentaries and author responses.",
+      "summary": "An open-access journal on animal feeling and consciousness. It pairs target articles with expert commentaries and author responses, making scientific and philosophical disagreements visible in one place.",
       "usefulness": "Target articles, expert commentaries, and author responses from several disciplines.",
-      "caveat": "The repository spans many subjects and viewpoints. Commentary can clarify a debate but is not equivalent to independent replication or systematic review.",
+      "caveat": "Commentary can clarify a debate but is not equivalent to independent replication or systematic review.",
       "topics": ["sentience", "consciousness", "pain", "peer commentary"],
       "taxa": ["vertebrates", "invertebrates"],
-      "evidence_type": "Open journal and institutional repository",
-      "access": "Repository records, PDFs and article metadata",
+      "evidence_type": "Open journal",
+      "access": "Journal pages, PDFs and article metadata",
       "reuse": "Licensing is attached at the item or journal level; verify before reuse.",
       "references": [
         {
-          "label": "Animal Sentience journal",
-          "url": "https://www.wellbeingintlstudiesrepository.org/animsent/"
+          "label": "Aims and scope",
+          "url": "https://www.wellbeingintlstudiesrepository.org/animsent/aimsandscope.html"
         }
       ]
     },
@@ -316,7 +312,7 @@
       "id": "eu-alures",
       "name": "EU Animals in Science / ALURES",
       "domain": "environment.ec.europa.eu",
-      "url": "https://environment.ec.europa.eu/",
+      "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en",
       "category": "research",
       "summary": "The European Commission’s transparency system for animals used in scientific procedures. ALURES reports animals, uses, purposes, species, origins, genetic status, and the actual severity assigned to procedures across EU member states and Norway.",
       "usefulness": "Multi-country records of the number of animals used and the assigned severity of scientific procedures.",
@@ -328,8 +324,8 @@
       "reuse": "European Commission reuse rules apply; inspect dataset-specific notices.",
       "references": [
         {
-          "label": "Statistics and non-technical summaries",
-          "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en"
+          "label": "Animals in science",
+          "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science_en"
         },
         {
           "label": "ALURES dataset export",

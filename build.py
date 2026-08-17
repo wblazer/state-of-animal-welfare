@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import csv
-import html
 import json
 import shutil
 from collections import Counter
@@ -45,10 +44,6 @@ REQUIRED_FIELDS = {
 }
 
 
-def e(value: object) -> str:
-    return html.escape(str(value), quote=True)
-
-
 def validate(catalog: dict) -> None:
     entries = catalog.get("entries")
     if not isinstance(entries, list) or not entries:
@@ -68,36 +63,9 @@ def validate(catalog: dict) -> None:
         if entry["category"] not in categories:
             raise ValueError(f"unknown category for {entry['id']}: {entry['category']}")
         if not entry["url"].startswith("https://"):
-            raise ValueError(f"non-HTTPS root URL for {entry['id']}")
+            raise ValueError(f"non-HTTPS primary URL for {entry['id']}")
         ids.add(entry["id"])
         domains.add(entry["domain"])
-
-
-def render_source(entry: dict) -> str:
-    return f"""
-<li class="source-item" id="source-{e(entry['id'])}">
-  <h4><a href="{e(entry['url'])}">{e(entry['name'])}</a><span class="source-domain">{e(entry['domain'])}</span></h4>
-  <p>{e(entry['summary'])}</p>
-</li>""".strip()
-
-
-def render_sections(entries: list[dict]) -> str:
-    result: list[str] = []
-    for category_id, title in CATEGORIES:
-        category_entries = [entry for entry in entries if entry["category"] == category_id]
-        if not category_entries:
-            continue
-        sources = "\n".join(render_source(entry) for entry in category_entries)
-        result.append(
-            f"""
-<section class="source-section" id="sources-{e(category_id)}">
-  <h3>{e(title)}</h3>
-  <ul class="source-list">
-    {sources}
-  </ul>
-</section>""".strip()
-        )
-    return "\n".join(result)
 
 
 def make_json_ld(catalog: dict) -> str:
@@ -187,9 +155,7 @@ def write_llms_txt(catalog: dict) -> None:
         "",
         "> Evidence about animal welfare and sentient experience.",
         "",
-        "Primary links point to root domains. Source descriptions are original and do not reproduce linked content.",
-        "",
-        "## Selected domains",
+        "## Selected sources",
         "",
     ]
     category_titles = dict(CATEGORIES)
@@ -221,7 +187,6 @@ def main() -> None:
     counts = Counter(entry["category"] for entry in catalog["entries"])
     evidence_count = len(catalog["entries"]) - counts["future"]
     replacements = {
-        "{{CATALOG_SECTIONS}}": render_sections(catalog["entries"]),
         "{{JSON_LD}}": make_json_ld(catalog),
     }
     for marker, value in replacements.items():
