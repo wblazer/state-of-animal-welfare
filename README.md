@@ -22,7 +22,7 @@ Then open `http://localhost:8080`.
 - A complete static HTML page
 - `catalog.json` and `catalog.csv`
 - JSON-LD in the HTML document
-- `llms.txt`, `robots.txt`, and `sitemap.xml`
+- `llms.txt` and `robots.txt`
 
 Generated files live in `dist/` and are not committed.
 

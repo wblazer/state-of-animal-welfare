@@ -137,7 +137,6 @@ def make_json_ld(catalog: dict) -> str:
         "@type": "CollectionPage",
         "name": catalog["name"],
         "description": catalog["description"],
-        "url": catalog["site_url"] + "/",
         "dateModified": catalog["updated"],
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "mainEntity": {
@@ -222,7 +221,6 @@ def main() -> None:
     counts = Counter(entry["category"] for entry in catalog["entries"])
     evidence_count = len(catalog["entries"]) - counts["future"]
     replacements = {
-        "{{SITE_URL}}": catalog["site_url"],
         "{{CATALOG_SECTIONS}}": render_sections(catalog["entries"]),
         "{{JSON_LD}}": make_json_ld(catalog),
     }
@@ -239,7 +237,6 @@ def main() -> None:
     (DIST_PATH / "index.html").write_text(template, encoding="utf-8")
 
     public_catalog = dict(catalog)
-    public_catalog.pop("site_url")
     public_catalog["license"] = {
         "editorial": "https://creativecommons.org/licenses/by/4.0/",
         "metadata": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -251,14 +248,7 @@ def main() -> None:
     write_csv(catalog)
     write_llms_txt(catalog)
     (DIST_PATH / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\n\nSitemap: {catalog['site_url']}/sitemap.xml\n",
-        encoding="utf-8",
-    )
-    (DIST_PATH / "sitemap.xml").write_text(
-        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-        "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
-        f"  <url><loc>{catalog['site_url']}/</loc><lastmod>{catalog['updated']}</lastmod></url>\n"
-        "</urlset>\n",
+        "User-agent: *\nAllow: /\n",
         encoding="utf-8",
     )
     print(
