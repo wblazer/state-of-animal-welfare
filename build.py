@@ -20,45 +20,38 @@ DIST_PATH = ROOT / "dist"
 CATEGORIES = [
     (
         "global",
-        "01",
-        "Global scale & systems",
-        "Start with the denominator: how many animals are affected, where, and by which human systems.",
+        "Global scale",
+        "Counts, trends, and research libraries that establish the size of human use of animals.",
     ),
     (
         "sentience",
-        "02",
-        "Sentience & consciousness",
-        "Evidence and arguments about which beings can have experiences—and why those experiences matter.",
+        "Sentience and moral status",
+        "Evidence and conceptual foundations for understanding which beings can have experiences.",
     ),
     (
         "farmed",
-        "03",
         "Farmed-animal welfare",
-        "Methods that move from production counts toward the intensity, duration, and prevalence of experience.",
+        "Research that measures the intensity, duration, and prevalence of lived experience.",
     ),
     (
         "aquatic",
-        "04",
-        "Aquatic-animal welfare",
-        "Making individuals visible in systems that usually report biomass, landings, or production tonnage.",
+        "Aquatic animals",
+        "Work that makes individuals visible in systems usually reported as biomass or tonnage.",
     ),
     (
         "wild",
-        "05",
         "Wild-animal welfare",
-        "An emerging field asking how free-living animals fare—not only whether populations and species persist.",
+        "An emerging field concerned with how free-living individuals fare, not only whether species persist.",
     ),
     (
         "research",
-        "06",
-        "Research & other uses",
-        "Official records of animals used in scientific procedures, including purpose and reported severity.",
+        "Animals used in research",
+        "Official records of scientific procedures, including purpose and experienced severity.",
     ),
     (
         "future",
-        "07",
-        "Ideas about the future",
-        "Developed—often radical—proposals about what a better future for sentient life could mean.",
+        "Visions of the future",
+        "Developed proposals for extending moral concern and using future technology to improve sentient life.",
     ),
 ]
 
@@ -108,10 +101,6 @@ def validate(catalog: dict) -> None:
         domains.add(entry["domain"])
 
 
-def render_tags(items: list[str]) -> str:
-    return "".join(f'<li>{e(item)}</li>' for item in items)
-
-
 def render_references(references: list[dict[str, str]]) -> str:
     links = "".join(
         f'<li><a href="{e(ref["url"])}">{e(ref["label"])}<span aria-hidden="true">↗</span></a></li>'
@@ -123,32 +112,20 @@ def render_references(references: list[dict[str, str]]) -> str:
 def render_card(entry: dict, index: int) -> str:
     return f"""
 <article class="source-card" id="source-{e(entry['id'])}">
-  <div class="card-index" aria-hidden="true">{index:02d}</div>
-  <div class="card-body">
-    <div class="domain-line">
-      <span class="evidence-type">{e(entry['evidence_type'])}</span>
-      <span class="domain">{e(entry['domain'])}</span>
-    </div>
+  <div class="source-number" aria-hidden="true">{index}</div>
+  <div class="source-copy">
     <h3><a href="{e(entry['url'])}">{e(entry['name'])}<span aria-hidden="true">↗</span></a></h3>
+    <p class="source-meta">{e(entry['domain'])} · {e(entry['evidence_type'])}</p>
     <p class="summary">{e(entry['summary'])}</p>
-    <dl class="assessment">
-      <div>
-        <dt>Why it is useful</dt>
-        <dd>{e(entry['usefulness'])}</dd>
-      </div>
-      <div>
-        <dt>Read with care</dt>
-        <dd>{e(entry['caveat'])}</dd>
-      </div>
-    </dl>
-    <ul class="tag-list">{render_tags(entry['topics'])}</ul>
     <details>
-      <summary>Access, scope &amp; key references</summary>
-      <div class="detail-grid">
-        <div><span>Taxa / scope</span><p>{e(', '.join(entry['taxa']))}</p></div>
-        <div><span>Machine access</span><p>{e(entry['access'])}</p></div>
-        <div><span>Source rights</span><p>{e(entry['reuse'])}</p></div>
-        <div><span>Selected references</span>{render_references(entry['references'])}</div>
+      <summary>Why this source is useful</summary>
+      <div class="source-notes">
+        <p><strong>Use it for:</strong> {e(entry['usefulness'])}</p>
+        <p><strong>Keep in mind:</strong> {e(entry['caveat'])}</p>
+        <p><strong>Scope:</strong> {e(', '.join(entry['taxa']))}</p>
+        <p><strong>Access:</strong> {e(entry['access'])}</p>
+        <p><strong>Source rights:</strong> {e(entry['reuse'])}</p>
+        <div class="source-references"><strong>Good places to begin:</strong>{render_references(entry['references'])}</div>
       </div>
     </details>
   </div>
@@ -158,37 +135,26 @@ def render_card(entry: dict, index: int) -> str:
 def render_sections(entries: list[dict]) -> str:
     result: list[str] = []
     source_index = 0
-    for category_id, number, title, description in CATEGORIES:
+    for category_id, title, description in CATEGORIES:
         category_entries = [entry for entry in entries if entry["category"] == category_id]
         if not category_entries:
             continue
-        is_future = category_id == "future"
         cards = []
         for entry in category_entries:
             source_index += 1
             cards.append(render_card(entry, source_index))
-        disclaimer = ""
-        if is_future:
-            disclaimer = """
-<div class="future-note">
-  <strong>Relevance is not endorsement.</strong>
-  <p>These websites explore possible futures for sentient life. Inclusion means the ideas are relevant and developed enough to examine—not that their assumptions, feasibility, or prescriptions are established or endorsed.</p>
-</div>""".strip()
-        disclaimer_block = f"{disclaimer}\n" if disclaimer else ""
         cards_block = "\n".join(cards)
         result.append(
             f"""
-<section class="directory-section{' future-section' if is_future else ''}" id="{e(category_id)}">
+<section class="directory-section" id="sources-{e(category_id)}">
   <header class="section-heading">
-    <span class="section-number">{e(number)}</span>
     <div>
-      <p class="eyebrow">{'Exploratory' if is_future else 'Evidence map'}</p>
       <h2>{e(title)}</h2>
       <p>{e(description)}</p>
     </div>
-    <span class="section-count">{len(category_entries):02d} domains</span>
+    <span class="section-count">{len(category_entries)} {'source' if len(category_entries) == 1 else 'sources'}</span>
   </header>
-{disclaimer_block}  <div class="source-list">
+  <div class="source-list">
     {cards_block}
   </div>
 </section>""".strip()
@@ -295,7 +261,7 @@ def write_llms_txt(catalog: dict) -> None:
         "## Selected domains",
         "",
     ]
-    category_titles = {category[0]: category[2] for category in CATEGORIES}
+    category_titles = {category[0]: category[1] for category in CATEGORIES}
     current_category = None
     for entry in catalog["entries"]:
         if entry["category"] != current_category:

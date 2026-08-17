@@ -1,6 +1,6 @@
 {
   "name": "Animal Welfare Atlas",
-  "description": "A curated map of evidence about the lives and experiences of sentient animals, plus a separately labeled collection of ideas about possible futures.",
+  "description": "A guided account of the scale and character of animal suffering, the largest gaps in what humanity measures, and visions of a better future for sentient life.",
   "updated": "2026-08-17",
   "site_url": "https://animal-welfare-atlas--user_01kx14nbyez3ssyeg824pypyrd.onamp.dev",
   "entries": [
@@ -168,6 +168,27 @@
         {
           "label": "Animal Sentience journal",
           "url": "https://www.wellbeingintlstudiesrepository.org/animsent/"
+        }
+      ]
+    },
+    {
+      "id": "new-york-declaration",
+      "name": "New York Declaration on Animal Consciousness",
+      "domain": "sites.google.com/nyu.edu/nydeclaration",
+      "url": "https://sites.google.com/nyu.edu/nydeclaration/",
+      "category": "sentience",
+      "summary": "A concise statement of scientific agreement on animal consciousness. It reports strong support for conscious experience in mammals and birds, and a realistic possibility in all vertebrates and many invertebrates, including cephalopods, decapod crustaceans, and insects.",
+      "usefulness": "The clearest short statement of the present scientific baseline: conscious experience is not confined to humans or to a small set of familiar mammals.",
+      "caveat": "A declaration records expert agreement rather than presenting the full evidence base. Its deliberately broad claims are a starting point for the linked scientific literature.",
+      "topics": ["consciousness", "sentience", "vertebrates", "invertebrates"],
+      "taxa": ["mammals", "birds", "vertebrates", "cephalopods", "decapods", "insects"],
+      "evidence_type": "Scientific consensus declaration",
+      "access": "Static HTML statement and signatory list",
+      "reuse": "Publicly readable; no site-wide open license identified.",
+      "references": [
+        {
+          "label": "Read the declaration",
+          "url": "https://sites.google.com/nyu.edu/nydeclaration/declaration"
         }
       ]
     },

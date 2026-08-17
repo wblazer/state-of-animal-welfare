@@ -1,6 +1,6 @@
 # Animal Welfare Atlas
 
-A selective, machine-readable directory of evidence about animal welfare and sentient experience. Empirical sources are kept separate from normative or speculative ideas about the future.
+An editorial guide to animal sentience, the scale and character of animal suffering, the largest gaps in what humanity measures, and visions of a better future. A curated, machine-readable source library supports the narrative.
 
 The primary links are root domains. All summaries are original; the project does not mirror content from linked websites.
 
