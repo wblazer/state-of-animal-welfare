@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animal Welfare Atlas — Evidence for sentient life</title>
+  <meta name="description" content="A curated map of evidence about animal welfare, sentience, farming, aquatic animals, wild animals, and possible futures for sentient life.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#17231d">
+  <link rel="canonical" href="{{SITE_URL}}/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="alternate" type="application/json" href="/catalog.json" title="Animal Welfare Atlas catalog (JSON)">
+  <link rel="alternate" type="text/csv" href="/catalog.csv" title="Animal Welfare Atlas catalog (CSV)">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Animal Welfare Atlas guide for language models">
+  <script type="application/ld+json">
+{{JSON_LD}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the evidence</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Animal Welfare Atlas home">
+      <span class="mark" aria-hidden="true">AWA</span>
+      <span>Animal Welfare Atlas</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#directory">Evidence</a>
+      <a href="#future">Future ideas</a>
+      <a href="#method">Method</a>
+      <a class="data-link" href="/catalog.json">Get the data <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> An evidence map for sentient life</p>
+        <h1>What do we know about the lives animals are living?</h1>
+        <p class="dek">Trace what is known about the scale, intensity, and distribution of animal experiences across farms, oceans, laboratories, and the wild.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
+          <a class="secondary-action" href="#orientation">How to read the evidence</a>
+        </div>
+      </div>
+      <aside class="hero-index" aria-label="Catalog summary">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <p class="eyebrow">First edition · {{UPDATED}}</p>
+        <div class="hero-stat main-stat">
+          <strong>{{TOTAL_COUNT}}</strong>
+          <span>carefully selected root domains</span>
+        </div>
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <strong>{{EVIDENCE_COUNT}}</strong>
+            <span>evidence sources</span>
+          </div>
+          <div class="hero-stat">
+            <strong>{{FUTURE_COUNT}}</strong>
+            <span>future visions</span>
+          </div>
+        </div>
+        <p class="index-note">Every entry includes an original summary, its evidence type, why it is useful, and what to treat cautiously.</p>
+      </aside>
+    </section>
+
+    <section class="thesis" aria-labelledby="thesis-title">
+      <div class="thesis-heading">
+        <p class="eyebrow">The short version</p>
+        <h2 id="thesis-title">There is no global welfare census.</h2>
+      </div>
+      <div class="thesis-copy">
+        <p>But several conclusions survive that limitation. Many nonhuman animals have the capacity for positive and negative experience. Human systems affect an immense number of them. Measures of production and mortality reveal scale, while a smaller body of welfare research documents pain, disease, restriction, fear, frustration, and—in some settings—opportunities for positive experience.</p>
+        <p>The evidence is least complete where the numbers may be largest: aquatic animals, invertebrates, and free-living wild animals. A responsible picture of the world therefore combines what is measured with a clear account of what remains unknown.</p>
+      </div>
+    </section>
+
+    <section class="orientation" id="orientation" aria-labelledby="orientation-title">
+      <header>
+        <p class="eyebrow">How to read the evidence</p>
+        <h2 id="orientation-title">A count is not an experience.</h2>
+        <p>Animal welfare is about how life feels to an individual. The available evidence approaches that question through several imperfect lenses.</p>
+      </header>
+      <ol class="lens-grid">
+        <li>
+          <span>01</span>
+          <h3>Who can experience?</h3>
+          <p>Behavior, neurobiology, cognition, and evolutionary continuity inform judgments about sentience. Uncertainty is not the same as evidence of absence.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3>How many are affected?</h3>
+          <p>Official counts and modeled estimates establish scale. They do not, by themselves, establish the quality of the lives counted.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3>What happens to them?</h3>
+          <p>Housing, handling, capture, disease, hunger, injury, slaughter, and ecology describe conditions that can generate different experiences.</p>
+        </li>
+        <li>
+          <span>04</span>
+          <h3>How bad, and for how long?</h3>
+          <p>Severity, duration, and prevalence turn a list of hazards into a welfare assessment. This is the most important—and sparsest—layer.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="directory-intro" id="directory">
+      <div>
+        <p class="eyebrow">The directory</p>
+        <h2>Follow the evidence to its source.</h2>
+      </div>
+      <p>Entries point first to whole domains with substantial material to explore. Selected articles or datasets appear only as signposts inside each card. This atlas summarizes; it does not mirror.</p>
+      <nav class="category-nav" aria-label="Directory categories">
+        <a href="#global"><span>01</span> Global</a>
+        <a href="#sentience"><span>02</span> Sentience</a>
+        <a href="#farmed"><span>03</span> Farmed</a>
+        <a href="#aquatic"><span>04</span> Aquatic</a>
+        <a href="#wild"><span>05</span> Wild</a>
+        <a href="#research"><span>06</span> Research</a>
+        <a href="#future"><span>07</span> Future</a>
+      </nav>
+    </section>
+
+    <div class="directory">
+{{CATALOG_SECTIONS}}
+    </div>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <header class="method-heading">
+        <p class="eyebrow">Method &amp; reuse</p>
+        <h2 id="method-title">Built to be read—by people and machines.</h2>
+        <p>Last reviewed <time datetime="{{UPDATED}}">{{UPDATED}}</time>. This is a selective first edition, not a claim to completeness.</p>
+      </header>
+      <div class="method-grid">
+        <article>
+          <span class="method-number">01</span>
+          <h3>Selection</h3>
+          <p>We favor domains with substantial, durable material; clear methods or citations; a distinct contribution; and pages or data that can be accessed without an account. Quality outranks quantity.</p>
+        </article>
+        <article>
+          <span class="method-number">02</span>
+          <h3>Evidence labels</h3>
+          <p>Direct welfare observations, official counts, modeled counts, pressure proxies, sentience evidence, synthesis, and normative argument answer different questions. The cards identify rather than flatten those differences.</p>
+        </article>
+        <article>
+          <span class="method-number">03</span>
+          <h3>No mirrored content</h3>
+          <p>No linked site’s prose, charts, datasets, or publisher abstracts are copied here. The summaries are original. JSON and CSV expose this atlas’s own catalog metadata—not a copy of anyone else’s site.</p>
+        </article>
+        <article>
+          <span class="method-number">04</span>
+          <h3>Crawlable ≠ reusable</h3>
+          <p>A page being technically accessible does not grant permission to train on, republish, or redistribute it. Each source keeps its own rights. Access notes and reuse notes are deliberately separate.</p>
+        </article>
+      </div>
+      <div class="machine-panel">
+        <div>
+          <p class="eyebrow">Structured access</p>
+          <h3>Use the catalog in the format you need.</h3>
+          <p>The full visible text is static HTML. The same original catalog metadata is also available as JSON, CSV, JSON-LD, and <code>llms.txt</code>. Crawling is permitted in <code>robots.txt</code>.</p>
+        </div>
+        <div class="download-list">
+          <a href="/catalog.json"><span>JSON</span> Structured catalog <b>↓</b></a>
+          <a href="/catalog.csv"><span>CSV</span> Flat data export <b>↓</b></a>
+          <a href="/llms.txt"><span>TXT</span> Model-readable guide <b>↓</b></a>
+          <a href="/sitemap.xml"><span>XML</span> Sitemap <b>↓</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-title">
+      <span class="mark" aria-hidden="true">AWA</span>
+      <p>Animal Welfare Atlas</p>
+    </div>
+    <p>Original editorial summaries and site prose are licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Catalog facts and metadata are <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. Linked works remain under their source terms.</p>
+    <p class="footer-note">A neutral map of evidence, uncertainty, and ideas about the future of sentient life.</p>
+  </footer>
+</body>
+</html>

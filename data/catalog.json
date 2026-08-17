@@ -1,0 +1,459 @@
+{
+  "name": "Animal Welfare Atlas",
+  "description": "A curated map of evidence about the lives and experiences of sentient animals, plus a separately labeled collection of ideas about possible futures.",
+  "updated": "2026-08-17",
+  "site_url": "https://animal-welfare-atlas--user_01kx14nbyez3ssyeg824pypyrd.onamp.dev",
+  "entries": [
+    {
+      "id": "our-world-in-data",
+      "name": "Our World in Data",
+      "domain": "ourworldindata.org",
+      "url": "https://ourworldindata.org/",
+      "category": "global",
+      "summary": "A broad, chart-led synthesis of global agriculture, food systems, biodiversity, and animal welfare. Its animal-focused work connects production statistics with questions about confinement, slaughter, and the number of animals affected.",
+      "usefulness": "The best starting point for putting animal welfare into a global quantitative context, with transparent charts that usually expose their underlying data.",
+      "caveat": "Many datasets measure production or animal counts rather than lived experience. Data licenses and definitions vary by underlying source.",
+      "topics": ["global scale", "farmed animals", "food systems", "slaughter"],
+      "taxa": ["terrestrial farmed animals", "aquatic animals"],
+      "evidence_type": "Synthesis and data visualization",
+      "access": "HTML, CSV and JSON chart data",
+      "reuse": "OWID-authored material is generally CC BY 4.0; underlying datasets can have separate terms.",
+      "references": [
+        {
+          "label": "Animal welfare topic page",
+          "url": "https://ourworldindata.org/animal-welfare"
+        },
+        {
+          "label": "How many animals are factory-farmed?",
+          "url": "https://ourworldindata.org/how-many-animals-are-factory-farmed"
+        }
+      ]
+    },
+    {
+      "id": "fao",
+      "name": "Food and Agriculture Organization",
+      "domain": "fao.org",
+      "url": "https://www.fao.org/",
+      "category": "global",
+      "summary": "The primary international source for country-reported livestock, slaughter, fisheries, and aquaculture statistics. FAOSTAT and FishStat provide long-run, cross-country records used by many later estimates.",
+      "usefulness": "Essential for tracing claims about how many animals are raised, slaughtered, caught, or farmed back to official reporting systems.",
+      "caveat": "These are production statistics, not a welfare census. Countries differ in coverage and reporting quality, and fish are often recorded by weight rather than individual count.",
+      "topics": ["livestock", "slaughter", "fisheries", "aquaculture", "official statistics"],
+      "taxa": ["terrestrial farmed animals", "fish", "aquatic invertebrates"],
+      "evidence_type": "Official international statistics",
+      "access": "Data portals, bulk downloads and APIs",
+      "reuse": "FAO provides explicit data terms; check the terms attached to each product.",
+      "references": [
+        {
+          "label": "FAOSTAT data portal",
+          "url": "https://www.fao.org/faostat/en/#data"
+        },
+        {
+          "label": "Fisheries and aquaculture statistics",
+          "url": "https://www.fao.org/fishery/en/statistics"
+        }
+      ]
+    },
+    {
+      "id": "faunalytics",
+      "name": "Faunalytics",
+      "domain": "faunalytics.org",
+      "url": "https://faunalytics.org/",
+      "category": "global",
+      "summary": "A large research library and original-research program covering farmed animals, wildlife, companion animals, animal use, public attitudes, and advocacy outcomes. Entries translate academic studies into searchable summaries.",
+      "usefulness": "An unusually efficient discovery layer for finding evidence spread across disciplines and for seeing what is known, uncertain, or understudied.",
+      "caveat": "It is an animal-advocacy research organization, so topic selection reflects that mission. Summaries are a guide to—not a substitute for—the underlying studies.",
+      "topics": ["research library", "public attitudes", "animal use", "welfare"],
+      "taxa": ["farmed animals", "wild animals", "companion animals", "research animals"],
+      "evidence_type": "Research summaries and original studies",
+      "access": "Browser HTML and reports; automated requests may be blocked",
+      "reuse": "Publicly readable; review its terms before reproducing or redistributing material.",
+      "references": [
+        {
+          "label": "Research library",
+          "url": "https://faunalytics.org/library/"
+        },
+        {
+          "label": "Original research",
+          "url": "https://faunalytics.org/research/"
+        }
+      ]
+    },
+    {
+      "id": "animal-clock",
+      "name": "Animal Clock",
+      "domain": "animalclock.org",
+      "url": "https://animalclock.org/",
+      "category": "global",
+      "summary": "A real-time visual counter that turns annual estimates of animals killed for food in the United States into rates that are easier to comprehend. It includes terrestrial animals and estimated wild-caught and farmed aquatic animals.",
+      "usefulness": "Useful as an intuition-building illustration of scale and of how dramatically totals change when aquatic animals are counted as individuals.",
+      "caveat": "This is a U.S.-focused visualization, not a live census. Source years and estimation methods differ by category and should be checked before quoting a number.",
+      "topics": ["scale", "slaughter", "visualization", "United States"],
+      "taxa": ["farmed animals", "wild-caught fish", "farmed fish", "shellfish"],
+      "evidence_type": "Derived estimate and visualization",
+      "access": "Interactive web page with source notes",
+      "reuse": "No clear site-wide open license identified; link and cite rather than reproduce.",
+      "references": [
+        {
+          "label": "Method and sources",
+          "url": "https://animalclock.org/"
+        }
+      ]
+    },
+    {
+      "id": "pmc",
+      "name": "PubMed Central",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "category": "sentience",
+      "summary": "The U.S. National Library of Medicine’s full-text archive of biomedical and life-science research. It contains open-access reviews and studies on pain, cognition, affective states, welfare indicators, and animal consciousness across many taxa.",
+      "usefulness": "A primary route to the scientific literature itself, including article text, references, figures, and machine-readable records rather than only secondary summaries.",
+      "caveat": "Coverage is biomedical rather than welfare-specific, and inclusion in the archive does not settle a scientific claim. Search quality and study appraisal still matter.",
+      "topics": ["sentience", "pain", "cognition", "welfare science", "scientific literature"],
+      "taxa": ["vertebrates", "invertebrates"],
+      "evidence_type": "Full-text scientific literature archive",
+      "access": "HTML, XML, APIs and bulk services",
+      "reuse": "Article-level licenses vary; PMC access does not make every article unrestricted.",
+      "references": [
+        {
+          "label": "PMC article datasets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/"
+        },
+        {
+          "label": "Searching for Animal Sentience: a systematic review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/"
+        }
+      ]
+    },
+    {
+      "id": "stanford-encyclopedia",
+      "name": "Stanford Encyclopedia of Philosophy",
+      "domain": "plato.stanford.edu",
+      "url": "https://plato.stanford.edu/",
+      "category": "sentience",
+      "summary": "A scholar-maintained reference work with careful entries on animal consciousness, animal moral status, pain, ethics, and the philosophy of mind. Articles map arguments, terminology, and disagreements to extensive bibliographies.",
+      "usefulness": "Provides neutral conceptual scaffolding for understanding why sentience matters morally and where empirical questions end and ethical premises begin.",
+      "caveat": "It is a philosophy reference, not a source of global animal counts or direct welfare measurements. Entries synthesize debates rather than deliver a single verdict.",
+      "topics": ["consciousness", "moral status", "ethics", "philosophy of mind"],
+      "taxa": ["animals broadly"],
+      "evidence_type": "Academic reference work",
+      "access": "Static HTML and bibliographies",
+      "reuse": "Free to read but copyrighted; follow Stanford’s terms for reuse.",
+      "references": [
+        {
+          "label": "Animal consciousness",
+          "url": "https://plato.stanford.edu/entries/consciousness-animal/"
+        },
+        {
+          "label": "The moral status of animals",
+          "url": "https://plato.stanford.edu/entries/moral-animal/"
+        }
+      ]
+    },
+    {
+      "id": "animal-sentience-journal",
+      "name": "Animal Sentience",
+      "domain": "wellbeingintlstudiesrepository.org",
+      "url": "https://www.wellbeingintlstudiesrepository.org/",
+      "category": "sentience",
+      "summary": "An open repository that hosts the journal Animal Sentience alongside a broader collection of human–animal studies. The journal pairs target articles with many expert commentaries and author responses.",
+      "usefulness": "Especially valuable for seeing scientific and philosophical claims tested from multiple disciplinary perspectives rather than presented without challenge.",
+      "caveat": "The repository spans many subjects and viewpoints. Commentary can clarify a debate but is not equivalent to independent replication or systematic review.",
+      "topics": ["sentience", "consciousness", "pain", "peer commentary"],
+      "taxa": ["vertebrates", "invertebrates"],
+      "evidence_type": "Open journal and institutional repository",
+      "access": "Repository records, PDFs and article metadata",
+      "reuse": "Licensing is attached at the item or journal level; verify before reuse.",
+      "references": [
+        {
+          "label": "Animal Sentience journal",
+          "url": "https://www.wellbeingintlstudiesrepository.org/animsent/"
+        }
+      ]
+    },
+    {
+      "id": "welfare-footprint",
+      "name": "Welfare Footprint Project",
+      "domain": "welfarefootprint.org",
+      "url": "https://welfarefootprint.org/",
+      "category": "farmed",
+      "summary": "A quantitative framework for comparing animal-welfare problems through the intensity and duration of negative experiences, together with the number of animals affected. Applied studies estimate cumulative time spent in pain under different production scenarios.",
+      "usefulness": "Moves beyond counting animals or deaths by asking how bad experiences are and how long they last—the dimensions needed for meaningful welfare comparison.",
+      "caveat": "Pain categories and duration estimates require judgment under uncertainty. Results are scenario-specific and should not be treated as universal constants.",
+      "topics": ["pain", "duration", "welfare measurement", "farming systems"],
+      "taxa": ["chickens", "pigs", "farmed animals"],
+      "evidence_type": "Quantitative welfare framework and applied studies",
+      "access": "HTML methods, reports and downloadable outputs",
+      "reuse": "Many project outputs state open licenses; verify the license on each item.",
+      "references": [
+        {
+          "label": "Analytical approach",
+          "url": "https://welfarefootprint.org/research-projects/analytical-approach/"
+        },
+        {
+          "label": "Pain-Track",
+          "url": "https://welfarefootprint.org/pain-track/"
+        }
+      ]
+    },
+    {
+      "id": "fishcount",
+      "name": "Fishcount",
+      "domain": "fishcount.org.uk",
+      "url": "https://fishcount.org.uk/",
+      "category": "aquatic",
+      "summary": "A specialist effort to estimate the number of individual fish caught from the wild and produced in aquaculture, translating tonnage statistics into animal counts and documenting common capture and slaughter practices.",
+      "usefulness": "Corrects a major unit-of-measure blind spot: fisheries are usually reported in tonnes, while welfare attaches to individual animals and their experiences.",
+      "caveat": "Individual counts are modeled ranges, not direct observations. They depend on species composition, average weights, FAO records, and assumptions that carry substantial uncertainty.",
+      "topics": ["fisheries", "aquaculture", "individual counts", "slaughter"],
+      "taxa": ["wild-caught fish", "farmed fish"],
+      "evidence_type": "Modeled count estimates and literature synthesis",
+      "access": "Plain HTML, reports and calculation notes",
+      "reuse": "No clear site-wide open license identified; cite estimates and methods carefully.",
+      "references": [
+        {
+          "label": "Estimated numbers of fish caught",
+          "url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-fish-caught-from-the-wild-each-year"
+        },
+        {
+          "label": "Estimated numbers of farmed fish",
+          "url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year"
+        }
+      ]
+    },
+    {
+      "id": "sea-around-us",
+      "name": "Sea Around Us",
+      "domain": "seaaroundus.org",
+      "url": "https://www.seaaroundus.org/",
+      "category": "aquatic",
+      "summary": "A research initiative that reconstructs marine catches by country, taxon, fishing sector, and destination, including components often missing from official landings such as discards and unreported catch.",
+      "usefulness": "Provides a fuller empirical picture of human impacts on wild aquatic animals and the scale hidden when only reported commercial landings are counted.",
+      "caveat": "Catch is a pressure and scale proxy, not a direct measure of suffering or welfare. Reconstructed values are estimates and uncertainty differs across places and periods.",
+      "topics": ["marine capture", "fisheries", "discards", "unreported catch"],
+      "taxa": ["marine fish", "aquatic invertebrates"],
+      "evidence_type": "Reconstructed fisheries dataset",
+      "access": "Interactive data portal and downloads",
+      "reuse": "Data are available for research use with attribution; consult current terms and citation guidance.",
+      "references": [
+        {
+          "label": "Data and tools",
+          "url": "https://www.seaaroundus.org/data/#/eez"
+        },
+        {
+          "label": "Catch reconstruction methods",
+          "url": "https://www.seaaroundus.org/catch-reconstruction-and-allocation-methods/"
+        }
+      ]
+    },
+    {
+      "id": "wild-animal-initiative",
+      "name": "Wild Animal Initiative",
+      "domain": "wildanimalinitiative.org",
+      "url": "https://www.wildanimalinitiative.org/",
+      "category": "wild",
+      "summary": "A research organization focused on the welfare of free-living animals. Its work develops field methods, reviews welfare-relevant ecology, maps research priorities, and supports an emerging academic discipline.",
+      "usefulness": "One of the clearest gateways from ecological facts—disease, injury, hunger, weather, reproduction, predation—to questions about animals’ actual quality of life.",
+      "caveat": "The field is young and direct population-level welfare measurements remain scarce. The organization is mission-driven, and many outputs identify questions rather than settle them.",
+      "topics": ["free-living animals", "welfare biology", "ecology", "research agenda"],
+      "taxa": ["wild vertebrates", "wild invertebrates"],
+      "evidence_type": "Research program, reviews and field methods",
+      "access": "HTML research library and papers",
+      "reuse": "Publicly readable; no verified site-wide open license.",
+      "references": [
+        {
+          "label": "Research",
+          "url": "https://www.wildanimalinitiative.org/research"
+        },
+        {
+          "label": "Research priorities",
+          "url": "https://www.wildanimalinitiative.org/research-priorities"
+        }
+      ]
+    },
+    {
+      "id": "wild-animal-welfare-committee",
+      "name": "Wild Animal Welfare Committee",
+      "domain": "wawcommittee.org",
+      "url": "https://wawcommittee.org/",
+      "category": "wild",
+      "summary": "An independent UK committee examining the welfare of free-living wild animals affected by human activities. It publishes evidence-led perspectives on management, policy, and how welfare should be assessed in wildlife decisions.",
+      "usefulness": "A practical bridge between welfare science and real decisions about wild animals, including cases where conservation, population control, and individual welfare can point in different directions.",
+      "caveat": "Its scope is primarily UK policy and human interventions, not a global estimate of welfare in nature.",
+      "topics": ["wildlife management", "policy", "welfare assessment", "United Kingdom"],
+      "taxa": ["free-living wild animals"],
+      "evidence_type": "Independent expert analysis and policy advice",
+      "access": "HTML publications and reports",
+      "reuse": "Check the terms attached to individual committee publications.",
+      "references": [
+        {
+          "label": "Resources and publications",
+          "url": "https://www.wawcommittee.org/resources"
+        }
+      ]
+    },
+    {
+      "id": "eu-alures",
+      "name": "EU Animals in Science / ALURES",
+      "domain": "environment.ec.europa.eu",
+      "url": "https://environment.ec.europa.eu/",
+      "category": "research",
+      "summary": "The European Commission’s transparency system for animals used in scientific procedures. ALURES reports animals, uses, purposes, species, origins, genetic status, and the actual severity assigned to procedures across EU member states and Norway.",
+      "usefulness": "One of the few multi-country official systems that reports experienced severity as well as counts, and that provides bulk exports alongside non-technical project summaries.",
+      "caveat": "This is regional, not global. Definitions, participating countries, and data-mining comparability change across years, and official severity classes remain coarse.",
+      "topics": ["laboratory animals", "scientific procedures", "severity", "official statistics"],
+      "taxa": ["research animals", "vertebrates", "cephalopods"],
+      "evidence_type": "Official regional statistics and project records",
+      "access": "HTML dashboards and full dataset exports",
+      "reuse": "European Commission reuse rules apply; inspect dataset-specific notices.",
+      "references": [
+        {
+          "label": "Statistics and non-technical summaries",
+          "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en"
+        },
+        {
+          "label": "ALURES dataset export",
+          "url": "https://environmental-data.ec.europa.eu/alures/datasets.html"
+        }
+      ]
+    },
+    {
+      "id": "hedweb",
+      "name": "The Hedonistic Imperative",
+      "domain": "hedweb.com",
+      "url": "https://www.hedweb.com/",
+      "category": "future",
+      "summary": "David Pearce’s long-running archive arguing that biotechnology could replace suffering with gradients of well-being across all sentient life. It connects genetics, consciousness, superintelligence, animal ethics, and the redesign of ecosystems.",
+      "usefulness": "The most developed single-author vision of a post-Darwinian future in which preventing suffering extends beyond humans and domesticated animals.",
+      "caveat": "A philosophical and technological program, not an empirical forecast. Its feasibility, assumptions about consciousness, and prescriptions are strongly contested.",
+      "topics": ["abolition of suffering", "biotechnology", "superintelligence", "ecosystem redesign"],
+      "taxa": ["all sentient life"],
+      "evidence_type": "Normative and speculative philosophical archive",
+      "access": "Extensive static HTML archive",
+      "reuse": "No clear site-wide open license identified; link and quote only within ordinary citation norms.",
+      "references": [
+        {
+          "label": "The Abolitionist Project",
+          "url": "https://www.hedweb.com/abolitionist-project/index.html"
+        },
+        {
+          "label": "Reprogramming predators",
+          "url": "https://www.hedweb.com/abolitionist-project/reprogramming-predators.html"
+        }
+      ]
+    },
+    {
+      "id": "herbivorize",
+      "name": "Herbivorize Predators",
+      "domain": "herbivorize.org",
+      "url": "https://herbivorize.org/",
+      "category": "future",
+      "summary": "A focused case for using directed evolution to transform rather than eliminate predatory species, aiming for ecosystems in which sentient animals no longer need to kill other animals to survive.",
+      "usefulness": "Makes one radical response to wild-animal suffering concrete enough to inspect, compare with alternatives, and challenge on ecological and ethical grounds.",
+      "caveat": "Highly conjectural and prescriptive. Ecological safety, technical feasibility, governance, animal interests, and unintended effects are unresolved.",
+      "topics": ["predation", "directed evolution", "compassionate conservation", "ecosystem redesign"],
+      "taxa": ["predators", "prey", "wild animals"],
+      "evidence_type": "Speculative proposal with linked argumentation",
+      "access": "Long-form HTML and linked paper",
+      "reuse": "Publicly crawlable; verify rights before reproducing text or graphics.",
+      "references": [
+        {
+          "label": "Nature without Suffering paper",
+          "url": "https://www.hedweb.com/private/nature-without-suffering.pdf"
+        }
+      ]
+    },
+    {
+      "id": "sentience-institute",
+      "name": "Sentience Institute",
+      "domain": "sentienceinstitute.org",
+      "url": "https://www.sentienceinstitute.org/",
+      "category": "future",
+      "summary": "A research organization studying moral-circle expansion: how societies come to include previously excluded sentient beings. Its work spans animals, social movements, technological change, and the possible moral status of digital minds.",
+      "usefulness": "Connects concern for animals today with the institutions and historical processes that may determine which beings future societies—and future AI systems—take seriously.",
+      "caveat": "Research is shaped by effective-altruist and long-term-future concerns. Historical analogies and forecasts about digital minds remain uncertain.",
+      "topics": ["moral-circle expansion", "social change", "digital minds", "technology"],
+      "taxa": ["nonhuman animals", "possible digital minds"],
+      "evidence_type": "Social research and future-oriented analysis",
+      "access": "HTML reports, articles, podcasts and datasets",
+      "reuse": "Check the license or terms for each publication and dataset.",
+      "references": [
+        {
+          "label": "Research",
+          "url": "https://www.sentienceinstitute.org/research"
+        },
+        {
+          "label": "Moral circle expansion and extinction risk",
+          "url": "https://www.sentienceinstitute.org/blog/moral-circle-expansion-vs-reducing-extinction-risk"
+        }
+      ]
+    },
+    {
+      "id": "center-for-reducing-suffering",
+      "name": "Center for Reducing Suffering",
+      "domain": "centerforreducingsuffering.org",
+      "url": "https://centerforreducingsuffering.org/",
+      "category": "future",
+      "summary": "A research center developing suffering-focused ethics and work on preventing futures with suffering on an enormous scale. Topics include wild animals, moral status, artificial minds, AI governance, and institutions.",
+      "usefulness": "Surfaces worst-case possibilities that standard animal-welfare and AI-governance discussions often omit, while giving their ethical premises explicit treatment.",
+      "caveat": "Explicitly normative and focused on severe suffering. Conclusions can depend on contested population ethics, low-probability scenarios, and uncertain models of the far future.",
+      "topics": ["suffering-focused ethics", "s-risks", "AI governance", "artificial minds"],
+      "taxa": ["all sentient beings", "possible artificial minds"],
+      "evidence_type": "Normative research and future-risk analysis",
+      "access": "HTML research library and papers",
+      "reuse": "Publicly readable; check publication-level terms before reuse.",
+      "references": [
+        {
+          "label": "Research",
+          "url": "https://centerforreducingsuffering.org/research/"
+        },
+        {
+          "label": "Introduction to s-risks",
+          "url": "https://centerforreducingsuffering.org/research/intro/"
+        }
+      ]
+    },
+    {
+      "id": "reducing-suffering",
+      "name": "Essays on Reducing Suffering",
+      "domain": "reducing-suffering.org",
+      "url": "https://reducing-suffering.org/",
+      "category": "future",
+      "summary": "Brian Tomasik’s extensive essay archive on wild-animal suffering, insect sentience, population ethics, artificial minds, simulations, and far-future outcomes. It includes exploratory calculations as well as philosophical arguments.",
+      "usefulness": "A wide-ranging record of neglected questions and unusual implications, especially where animal welfare intersects with computation and long-run technological change.",
+      "caveat": "A personal and intentionally exploratory archive. Many estimates are rough, views have evolved over time, and speculative pieces should not be mistaken for consensus research.",
+      "topics": ["wild-animal suffering", "insects", "artificial minds", "far future"],
+      "taxa": ["wild animals", "insects", "possible digital minds"],
+      "evidence_type": "Personal philosophical and quantitative essay archive",
+      "access": "Long-form HTML archive",
+      "reuse": "No verified site-wide open license; cite individual essays and dates.",
+      "references": [
+        {
+          "label": "Summary of my beliefs",
+          "url": "https://reducing-suffering.org/summary-beliefs-values-big-questions/"
+        }
+      ]
+    },
+    {
+      "id": "qri",
+      "name": "Qualia Research Institute",
+      "domain": "qri.org",
+      "url": "https://qri.org/",
+      "category": "future",
+      "summary": "A research organization exploring formal theories of consciousness and valence—the positive or negative character of experience—and how future technology might measure or alter them.",
+      "usefulness": "Relevant to the long-run question behind welfare measurement: whether the quality of experience can be understood precisely enough to compare or engineer, including in unfamiliar minds.",
+      "caveat": "Frontier, highly speculative work with limited direct animal-welfare application today. Its theories of consciousness and valence are not scientific consensus.",
+      "topics": ["valence", "consciousness", "qualia", "experience engineering"],
+      "taxa": ["conscious systems broadly"],
+      "evidence_type": "Theoretical and exploratory consciousness research",
+      "access": "HTML essays, papers and open-source code",
+      "reuse": "Licensing varies across writing, papers and code; inspect each item.",
+      "references": [
+        {
+          "label": "Research publications",
+          "url": "https://www.qri.org/research-publications"
+        }
+      ]
+    }
+  ]
+}
