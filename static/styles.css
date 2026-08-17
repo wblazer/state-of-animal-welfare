@@ -220,16 +220,6 @@ h1 {
   font: 0.76rem/1.6 var(--sans);
 }
 
-.site-footer div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 1rem;
-}
-
-.site-footer span {
-  margin-left: auto;
-}
-
 @media (max-width: 560px) {
   body {
     font-size: 16px;
@@ -270,11 +260,6 @@ h1 {
     display: block;
     margin: 0.2rem 0 0;
     overflow-wrap: anywhere;
-  }
-
-  .site-footer span {
-    width: 100%;
-    margin-left: 0;
   }
 }
 

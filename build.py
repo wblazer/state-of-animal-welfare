@@ -190,11 +190,6 @@ def write_llms_txt(catalog: dict) -> None:
         "",
         "Primary links point to root domains. Source descriptions are original and do not reproduce linked content.",
         "",
-        "## Data files",
-        "",
-        f"- [JSON catalog]({catalog['site_url']}/catalog.json): Complete structured catalog.",
-        f"- [CSV catalog]({catalog['site_url']}/catalog.csv): Flat export of the catalog metadata.",
-        "",
         "## Selected domains",
         "",
     ]
@@ -244,6 +239,7 @@ def main() -> None:
     (DIST_PATH / "index.html").write_text(template, encoding="utf-8")
 
     public_catalog = dict(catalog)
+    public_catalog.pop("site_url")
     public_catalog["license"] = {
         "editorial": "https://creativecommons.org/licenses/by/4.0/",
         "metadata": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -262,8 +258,6 @@ def main() -> None:
         "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
         "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
         f"  <url><loc>{catalog['site_url']}/</loc><lastmod>{catalog['updated']}</lastmod></url>\n"
-        f"  <url><loc>{catalog['site_url']}/catalog.json</loc><lastmod>{catalog['updated']}</lastmod></url>\n"
-        f"  <url><loc>{catalog['site_url']}/llms.txt</loc><lastmod>{catalog['updated']}</lastmod></url>\n"
         "</urlset>\n",
         encoding="utf-8",
     )
