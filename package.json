@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "node server.js"
+    "preview": "node server.js",
+    "audit:catalog": "node scripts/audit-sources.mjs validate",
+    "audit:links": "node scripts/audit-sources.mjs links",
+    "audit:policies": "node scripts/audit-sources.mjs policies",
+    "test:audit": "node --test scripts/audit-sources.test.mjs"
   },
   "devDependencies": {
     "astro": "5.18.2"

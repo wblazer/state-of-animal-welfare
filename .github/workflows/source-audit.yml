@@ -1,0 +1,127 @@
+name: Source audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/source-audit.yml"
+      - "data/source-audit-baseline.json"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/**"
+      - "src/data/catalog.json"
+      - "src/lib/catalog.ts"
+  pull_request:
+    paths:
+      - ".github/workflows/source-audit.yml"
+      - "data/source-audit-baseline.json"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/**"
+      - "src/data/catalog.json"
+      - "src/lib/catalog.ts"
+  workflow_dispatch:
+    inputs:
+      audit:
+        description: Audit to run
+        type: choice
+        options: [all, links, policies]
+        default: all
+  schedule:
+    - cron: "17 9 * * 1"
+    - cron: "31 10 1 * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run audit:catalog
+      - run: npm run test:audit
+      - run: npm run build
+
+  links:
+    needs: validate
+    if: >-
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'schedule' && github.event.schedule == '17 9 * * 1') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.audit == 'all' || inputs.audit == 'links'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check links
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          args=(links --output-directory .source-audit)
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git show "$BASE_SHA:src/data/catalog.json" > "$RUNNER_TEMP/previous-catalog.json"
+            args+=(--previous-catalog "$RUNNER_TEMP/previous-catalog.json" --fail-on-attention)
+          fi
+          node scripts/audit-sources.mjs "${args[@]}"
+      - name: Add report to job summary
+        if: always()
+        run: test ! -f .source-audit/links.md || cat .source-audit/links.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload report
+        if: always() && hashFiles('.source-audit/links.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-link-audit
+          path: .source-audit/
+      - name: Update audit issue
+        if: always() && github.event_name != 'pull_request' && hashFiles('.source-audit/links.json') != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          node scripts/sync-audit-issue.mjs
+          --report .source-audit/links.json
+          --body .source-audit/links.md
+          --title "Source links need review"
+
+  policies:
+    needs: validate
+    if: >-
+      (github.event_name == 'schedule' && github.event.schedule == '31 10 1 * *') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.audit == 'all' || inputs.audit == 'policies'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check policy signals
+        run: node scripts/audit-sources.mjs policies --output-directory .source-audit
+      - name: Add report to job summary
+        if: always()
+        run: test ! -f .source-audit/policies.md || cat .source-audit/policies.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload report
+        if: always() && hashFiles('.source-audit/policies.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-policy-audit
+          path: .source-audit/
+      - name: Update audit issue
+        if: always() && hashFiles('.source-audit/policies.json') != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          node scripts/sync-audit-issue.mjs
+          --report .source-audit/policies.json
+          --body .source-audit/policies.md
+          --title "Source policies need review"

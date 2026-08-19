@@ -23,6 +23,7 @@ export interface CatalogEntry {
   access: string;
   reuse: string;
   references: CatalogReference[];
+  policy_urls?: CatalogReference[];
 }
 
 export interface Catalog {

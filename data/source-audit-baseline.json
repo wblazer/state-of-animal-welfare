@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-19",
+  "snapshot": {
+    "robots": {
+      "https://animalclock.org": {
+        "url": "https://animalclock.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://animalclock.org/robots.txt",
+        "hash": "8df025d8e21602ad6e096f883a429b46a07cba7a36d655c5fdf71fd42c3a4864",
+        "agents": {
+          "*": {
+            "directiveCount": 1,
+            "hash": "e977f449edb52891d8b892cdd4fb4f819eb4112aef422b05011fbd10eda81086",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://environment.ec.europa.eu": {
+        "url": "https://environment.ec.europa.eu/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://environment.ec.europa.eu/robots.txt",
+        "hash": "6c827116822ef33861388ea20fa61d4ba66862c552a9b7799ea9acc19f05f367",
+        "agents": {
+          "*": {
+            "directiveCount": 41,
+            "hash": "dd7893277a63b9d6b43be8359943828446deb23a3b9c464971efb5da09289bab",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://environmental-data.ec.europa.eu": {
+        "url": "https://environmental-data.ec.europa.eu/robots.txt",
+        "state": "absent",
+        "status": 404,
+        "finalUrl": "https://environmental-data.ec.europa.eu/robots.txt",
+        "hash": null,
+        "agents": {},
+        "contentSignals": [],
+        "error": null
+      },
+      "https://faunalytics.org": {
+        "url": "https://faunalytics.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://faunalytics.org/robots.txt",
+        "hash": "364d09a6773858f5b53955261396aa66b9c135473037ed00fe21facb3f6c2a7a",
+        "agents": {
+          "*": {
+            "directiveCount": 12,
+            "hash": "8630a9d2f789665a861889ae1cf0f3723fefb961b62e8ad0f31850db78345129",
+            "rootRules": [
+              "allow: /"
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://fishcount.org.uk": {
+        "url": "https://fishcount.org.uk/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://fishcount.org.uk/robots.txt",
+        "hash": "9f92ba8d12d1fd4b65aa0561d6bb0b2fa47906eac51537735f32a51f5b3fd583",
+        "agents": {
+          "*": {
+            "directiveCount": 2,
+            "hash": "91dfb40a6cbe861e7ad8b7ceb09b9ea98585ef62dc62f3d1282ec4c388896d42",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://herbivorize.org": {
+        "url": "https://herbivorize.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://herbivorize.org/robots.txt",
+        "hash": "b0df054be0cb543b3f0dcc590a82afda5170c09f83a75f23bd31c1de787a94cd",
+        "agents": {
+          "*": {
+            "directiveCount": 2,
+            "hash": "eacf428217dbf9e7c896e8778484342e03189a368b1a93d7024b13d392920f47",
+            "rootRules": [
+              "allow: /"
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://insideanimalag.org": {
+        "url": "https://insideanimalag.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://insideanimalag.org/robots.txt",
+        "hash": "5de8a16409b4f3279eb25f21e81c7fc9af926e2de9f54d59976aa5f14759758d",
+        "agents": {
+          "*": {
+            "directiveCount": 7,
+            "hash": "beed24cdc0f9ef9fa3859639335da187f026240d5656445bbe7e3e1bcf2cd187",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://medicine.yale.edu": {
+        "url": "https://medicine.yale.edu/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://medicine.yale.edu/robots.txt",
+        "hash": "f03a8a420619b1abb6700eebd19635bdf9652051fab5fe6212677e9a277555b0",
+        "agents": {
+          "*": {
+            "directiveCount": 11,
+            "hash": "94b8a7b1bee47aaee3d424ee03d2aadd5c508dba834ff584c8b57da4cabec9e5",
+            "rootRules": [
+              "allow: /"
+            ]
+          },
+          "Bytespider": {
+            "directiveCount": 1,
+            "hash": "9fac4a3dd527ddbe186c78321fe2320f8424077cb89912ea2fa790e26cf38f62",
+            "rootRules": [
+              "disallow: /"
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://ourworldindata.org": {
+        "url": "https://ourworldindata.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://ourworldindata.org/robots.txt",
+        "hash": "dd66a7b7888edfafbcbe567ec3aa7bbfc50aee74ed3ebe2ad20a47a539c24ebf",
+        "agents": {},
+        "contentSignals": [],
+        "error": null
+      },
+      "https://plato.stanford.edu": {
+        "url": "https://plato.stanford.edu/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://plato.stanford.edu/robots.txt",
+        "hash": "912c27711bdb141a26b86d4359dff4382e438f00acfdba5c79c9ab8164af5b57",
+        "agents": {
+          "*": {
+            "directiveCount": 281,
+            "hash": "84933c57758fe47bdde0e8ba2501ce0ae89cbc1771bee856dd6847ccce603c82",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://pmc.ncbi.nlm.nih.gov": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/robots.txt",
+        "hash": "59c3dfc9d979e3ab3ca1e73ed68e9fe1e910440a1b3ae4bd45a4eb48f325f2fb",
+        "agents": {
+          "*": {
+            "directiveCount": 11,
+            "hash": "2770592d3836bc3771c240945450c0e4ef7134d37fc9136badc726f3fb99e40a",
+            "rootRules": [
+              "disallow: /"
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://pubmed.ncbi.nlm.nih.gov": {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/robots.txt",
+        "hash": "9d6e275a2fe7c39036526db06be08276519b27e5b3407585a25488bd64bd6cf1",
+        "agents": {
+          "*": {
+            "directiveCount": 47,
+            "hash": "1f1a7999e17e25c5c3a5a4eca5d7d25f768a27b5504dd846332210d8492931ed",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://sentientmedia.org": {
+        "url": "https://sentientmedia.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://sentientmedia.org/robots.txt",
+        "hash": "6865028b6bf14bbcbf4b7f5d6f4f51a3e563b26bfb75cb0e5f86721b1cee6231",
+        "agents": {
+          "*": {
+            "directiveCount": 6,
+            "hash": "708555ffb75ae0331c814369ae34665f7eff22bd02d7bb2789830d1dad22fca4",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://sites.google.com": {
+        "url": "https://sites.google.com/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://sites.google.com/robots.txt",
+        "hash": "dbe2af58de5be697f7349aaec481cf29e6d500406abd7890dc48025ac3b0f4ab",
+        "agents": {
+          "*": {
+            "directiveCount": 4,
+            "hash": "4380f0e6deffb4bdd8f995c3a3450d3307b9886619eb2ea9df809359691bd37e",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://welfarefootprint.org": {
+        "url": "https://welfarefootprint.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://welfarefootprint.org/robots.txt",
+        "hash": "44b5097849f2bdcaf09e90a5a8c0a88d882be86bd53dbd347678cd2374e72cc0",
+        "agents": {
+          "*": {
+            "directiveCount": 6,
+            "hash": "93accf230d58ffa0b9b2cea344f58a776e21c390626dbc606f07548afab5b2dc",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.fao.org": {
+        "url": "https://www.fao.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.fao.org/robots.txt",
+        "hash": "8acda2cc0f64c3b296437ab777de10d011cd3769e99011d41e50687f497f43fb",
+        "agents": {
+          "*": {
+            "directiveCount": 7,
+            "hash": "00fac17060d27f9e49cd35f39211546dc83473f16286f93e812e29810476b7f5",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.hedweb.com": {
+        "url": "https://www.hedweb.com/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.hedweb.com/robots.txt",
+        "hash": "a32566d181d367cd5fd1b181763a76f21cadb51e293d4cb57f94240f8eafe500",
+        "agents": {
+          "*": {
+            "directiveCount": 2,
+            "hash": "a59cecdabbf38fa827a6e4ed9853015f0a421411d011b38cd7cb041876db5577",
+            "rootRules": [
+              "disallow: "
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.neurology.org": {
+        "url": "https://www.neurology.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://www.neurology.org/robots.txt",
+        "hash": "753712f2a8fb89109e7fad702e792589ab9050652f5445f863655304c9c89fba",
+        "agents": {
+          "*": {
+            "directiveCount": 25,
+            "hash": "3825c1001ebb8a6e7e4d8cd644dc97777a5336a943c5467bb079bc6fa229b7e3",
+            "rootRules": []
+          },
+          "GPTBot": {
+            "directiveCount": 2,
+            "hash": "a592434d4627919d3b1e405bad2088abbe8b1cda850f38c651250ccb53c7cf32",
+            "rootRules": [
+              "disallow: /"
+            ]
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.seaaroundus.org": {
+        "url": "https://www.seaaroundus.org/robots.txt",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://www.seaaroundus.org/robots.txt",
+        "hash": "5d2315bb1378a9cb76fa321e307dfc157a81291f44f49473c45893002cc785da",
+        "agents": {
+          "*": {
+            "directiveCount": 1,
+            "hash": "e402f0bac52a7943b5b3a8b88d12002d424f50f971d2dfe407d1aaf3d03696c8",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.sentienceinstitute.org": {
+        "url": "https://www.sentienceinstitute.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.sentienceinstitute.org/robots.txt",
+        "hash": "56782ddb476f113161f5b9d1e448f4ea0634a45b4c82818462846a4492d07861",
+        "agents": {
+          "*": {
+            "directiveCount": 9,
+            "hash": "5c6b8340be78c775d062541038aa3cc15a602f4dddb6fc1271748f924fa74594",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.wawcommittee.org": {
+        "url": "https://www.wawcommittee.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.wawcommittee.org/robots.txt",
+        "hash": "b6cd8e5f38898c88b55a257122597671a3d93ea9ddc5213a6e94e2f8aa843497",
+        "agents": {
+          "*": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "GPTBot": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "Google-Extended": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "CCBot": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "ClaudeBot": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "anthropic-ai": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "Bytespider": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "Amazonbot": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "Applebot-Extended": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          },
+          "FacebookBot": {
+            "directiveCount": 29,
+            "hash": "42e1653f2961f657119b40a18ed95c5bcec259e9d5cef1901ad10c6f2572b9c1",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      },
+      "https://www.wildanimalinitiative.org": {
+        "url": "https://www.wildanimalinitiative.org/robots.txt",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.wildanimalinitiative.org/robots.txt",
+        "hash": "749eac953fa6a6208adab274d363acd05209bdce70343f7c1305be15e457eb9a",
+        "agents": {
+          "*": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "GPTBot": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "Google-Extended": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "CCBot": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "ClaudeBot": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "anthropic-ai": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "Bytespider": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "Amazonbot": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "Applebot-Extended": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          },
+          "FacebookBot": {
+            "directiveCount": 29,
+            "hash": "13e86c897154a12bbeb5ae4e75d404f406dd2f7459be8e99e947a934cbffb262",
+            "rootRules": []
+          }
+        },
+        "contentSignals": [],
+        "error": null
+      }
+    },
+    "pages": {
+      "new-york-declaration": {
+        "name": "New York Declaration on Animal Consciousness",
+        "url": "https://sites.google.com/nyu.edu/nydeclaration/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://sites.google.com/nyu.edu/nydeclaration/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "stanford-animal-consciousness": {
+        "name": "Animal Consciousness",
+        "url": "https://plato.stanford.edu/entries/consciousness-animal/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://plato.stanford.edu/entries/consciousness-animal/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "searching-animal-sentience": {
+        "name": "Searching for Animal Sentience",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [
+            "http://creativecommons.org/licenses/by/3.0/"
+          ],
+          "rights": []
+        },
+        "error": null
+      },
+      "sentience-institute": {
+        "name": "Sentience Institute",
+        "url": "https://www.sentienceinstitute.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.sentienceinstitute.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "our-world-in-data": {
+        "name": "Animal Welfare at Our World in Data",
+        "url": "https://ourworldindata.org/animal-welfare",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://ourworldindata.org/animal-welfare",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [
+            "https://creativecommons.org/licenses/by/4.0/"
+          ],
+          "rights": []
+        },
+        "error": null
+      },
+      "fao": {
+        "name": "FAOSTAT and fisheries statistics",
+        "url": "https://www.fao.org/faostat/en/#data",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.fao.org/faostat/en/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "faunalytics": {
+        "name": "Faunalytics research library",
+        "url": "https://faunalytics.org/?s=&post_type=post&orderby=post_date&order=desc&explore=true",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://faunalytics.org/?s=&post_type=post&orderby=post_date&order=desc&explore=true",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "animal-clock": {
+        "name": "Animal Clock",
+        "url": "https://animalclock.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://animalclock.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "sentient-media": {
+        "name": "Sentient Media",
+        "url": "https://sentientmedia.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://sentientmedia.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "inside-animal-ag": {
+        "name": "Inside Animal Ag",
+        "url": "https://insideanimalag.org/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://insideanimalag.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "welfare-footprint": {
+        "name": "Welfare Footprint Project",
+        "url": "https://welfarefootprint.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://welfarefootprint.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "fishcount": {
+        "name": "Fishcount",
+        "url": "https://fishcount.org.uk/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://fishcount.org.uk/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "sea-around-us": {
+        "name": "Sea Around Us",
+        "url": "https://www.seaaroundus.org/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://www.seaaroundus.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "wild-animal-initiative": {
+        "name": "Wild Animal Initiative",
+        "url": "https://www.wildanimalinitiative.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.wildanimalinitiative.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "wild-animal-welfare-committee": {
+        "name": "Wild Animal Welfare Committee",
+        "url": "https://www.wawcommittee.org/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://www.wawcommittee.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "eu-alures": {
+        "name": "EU Animals in Science and ALURES",
+        "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "psychedelics-cluster-headache": {
+        "name": "Psychedelics and cluster headache",
+        "url": "https://medicine.yale.edu/news-article/yales-pioneering-research-on-psychedelics-gives-hope-to-headache-disorder-community",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://medicine.yale.edu/news-article/yales-pioneering-research-on-psychedelics-gives-hope-to-headache-disorder-community/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "hedweb": {
+        "name": "The Hedonistic Imperative",
+        "url": "https://www.hedweb.com/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://www.hedweb.com/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      },
+      "herbivorize": {
+        "name": "Herbivorize Predators",
+        "url": "https://herbivorize.org/",
+        "state": "available",
+        "status": 200,
+        "finalUrl": "https://herbivorize.org/",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      }
+    },
+    "policies": {
+      "sentient-media:Terms of use": {
+        "name": "Sentient Media: Terms of use",
+        "url": "https://sentientmedia.org/terms-of-use/",
+        "state": "available",
+        "status": 206,
+        "finalUrl": "https://sentientmedia.org/terms-of-use/",
+        "textHash": "56a15eecf3f093618d7d07439b968633c054ad0b16d1896a0c837be891fb3f11",
+        "signals": {
+          "contentSignals": [],
+          "xRobotsTags": [],
+          "licenseUrls": [],
+          "rights": []
+        },
+        "error": null
+      }
+    }
+  }
+}

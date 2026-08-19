@@ -162,7 +162,7 @@
       "references": [
         {
           "label": "Fisheries and aquaculture statistics",
-          "url": "https://www.fao.org/fishery/en/statistics"
+          "url": "https://www.fao.org/fishery/statistics/en"
         }
       ]
     },
@@ -212,7 +212,8 @@
       "evidence_type": "Independent journalism and explainers",
       "access": "Public HTML without an account or paywall; ordinary article crawling is allowed by robots.txt.",
       "reuse": "All rights reserved; reproduction, distribution, transmission, and caching require prior written permission.",
-      "references": [
+      "references": [],
+      "policy_urls": [
         {
           "label": "Terms of use",
           "url": "https://sentientmedia.org/terms-of-use/"
@@ -251,11 +252,11 @@
       "references": [
         {
           "label": "Analytical approach",
-          "url": "https://welfarefootprint.org/research-projects/analytical-approach/"
+          "url": "https://welfarefootprint.org/analytical-approach/"
         },
         {
           "label": "Pain-Track",
-          "url": "https://welfarefootprint.org/pain-track/"
+          "url": "https://welfarefootprint.org/pain-tracks/"
         }
       ]
     },
@@ -325,7 +326,7 @@
       "id": "wild-animal-welfare-committee",
       "name": "Wild Animal Welfare Committee",
       "domain": "wawcommittee.org",
-      "url": "https://wawcommittee.org/",
+      "url": "https://www.wawcommittee.org/",
       "category": "wild",
       "annotation": "An independent UK committee examining the welfare of free-living animals affected by human activity. Its publications show how welfare evidence can change decisions about wildlife management, conservation, conflict, and population control.",
       "topics": ["wildlife management", "policy", "welfare assessment", "United Kingdom"],
