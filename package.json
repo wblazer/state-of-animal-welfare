@@ -1,0 +1,13 @@
+{
+  "name": "animal-welfare-reading-list",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "node server.js"
+  },
+  "devDependencies": {
+    "astro": "5.18.2"
+  }
+}

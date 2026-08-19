@@ -1,0 +1,418 @@
+{
+  "name": "Animal Welfare Reading List",
+  "description": "A curated, annotated library of writing, research, and data on animal welfare.",
+  "introduction": "A curated, annotated library of the best writing, research, and data on animal welfare.",
+  "updated": "2026-08-19",
+  "categories": [
+    {
+      "id": "sentience",
+      "title": "Sentience and moral consideration",
+      "description": "What conscious experience is, which animals may have it, and why their experiences matter."
+    },
+    {
+      "id": "global",
+      "title": "Scale and global data",
+      "description": "Sources for understanding how many animals are affected and how those estimates are produced."
+    },
+    {
+      "id": "farmed",
+      "title": "Farmed animals",
+      "description": "Research and reporting on the lives of animals in food systems and the institutions around them."
+    },
+    {
+      "id": "aquatic",
+      "title": "Aquatic animals",
+      "description": "Counts, capture methods, farming, and welfare for animals often recorded only by weight."
+    },
+    {
+      "id": "wild",
+      "title": "Wild animals",
+      "description": "The welfare of free-living animals, including suffering from natural causes and human activity."
+    },
+    {
+      "id": "research",
+      "title": "Animals used in research",
+      "description": "Official records of animal use in science and the severity assigned to experimental procedures."
+    },
+    {
+      "id": "suffering",
+      "title": "Reasoning about suffering",
+      "description": "Evidence on severe pain, treatments, and the institutions that determine which treatments are studied."
+    },
+    {
+      "id": "future",
+      "title": "Possible futures",
+      "description": "Proposals for using greater knowledge and technological capacity to reduce suffering more radically."
+    }
+  ],
+  "entries": [
+    {
+      "id": "new-york-declaration",
+      "name": "New York Declaration on Animal Consciousness",
+      "domain": "nydeclaration.com",
+      "url": "https://sites.google.com/nyu.edu/nydeclaration/",
+      "category": "sentience",
+      "annotation": "A concise statement of scientific agreement. It reports strong support for conscious experience in mammals and birds, and at least a realistic possibility in all vertebrates and many invertebrates, including insects, cephalopods, and decapod crustaceans.",
+      "topics": ["animal consciousness", "sentience", "scientific consensus"],
+      "evidence_type": "Scientific declaration and background review",
+      "access": "Public HTML",
+      "reuse": "Publicly readable; no general reuse license is stated.",
+      "references": [
+        {
+          "label": "Declaration",
+          "url": "https://sites.google.com/nyu.edu/nydeclaration/declaration"
+        },
+        {
+          "label": "Background",
+          "url": "https://sites.google.com/nyu.edu/nydeclaration/background"
+        }
+      ]
+    },
+    {
+      "id": "stanford-animal-consciousness",
+      "name": "Animal Consciousness",
+      "domain": "plato.stanford.edu",
+      "url": "https://plato.stanford.edu/entries/consciousness-animal/",
+      "category": "sentience",
+      "annotation": "A scholar-maintained introduction to animal consciousness. It explains the concepts, history, evidence, methodological disputes, and ethical stakes, then points into an extensive scientific and philosophical bibliography.",
+      "topics": ["consciousness", "sentience", "philosophy of mind", "moral status"],
+      "evidence_type": "Academic reference work",
+      "access": "Static HTML and bibliography",
+      "reuse": "Free to read; Stanford Encyclopedia of Philosophy copyright applies.",
+      "references": [
+        {
+          "label": "Evidence concerning animal consciousness",
+          "url": "https://plato.stanford.edu/entries/consciousness-animal/evidence.html"
+        },
+        {
+          "label": "The moral status of animals",
+          "url": "https://plato.stanford.edu/entries/moral-animal/"
+        }
+      ]
+    },
+    {
+      "id": "searching-animal-sentience",
+      "name": "Searching for Animal Sentience",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494450/",
+      "category": "sentience",
+      "annotation": "A systematic review of 2,562 studies published from 1990 to 2012. Nearly all assumed the animals had the emotion or sentience-related trait being studied; only 16 investigated whether it existed. The review also shows how strongly the literature favored vertebrates and negative states such as fear, stress, and pain.",
+      "topics": ["sentience", "emotion", "pain", "systematic review"],
+      "evidence_type": "Systematic review",
+      "access": "Full-text HTML, PDF, and article metadata",
+      "reuse": "Open-access article; article-level license applies.",
+      "references": [
+        {
+          "label": "PubMed record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26479539/"
+        }
+      ]
+    },
+    {
+      "id": "sentience-institute",
+      "name": "Sentience Institute",
+      "domain": "sentienceinstitute.org",
+      "url": "https://www.sentienceinstitute.org/",
+      "category": "sentience",
+      "annotation": "Research on moral-circle expansion and social change. Its animal-focused work studies how institutions and public attitudes have changed toward farmed animals, and why moral concern reaches some beings while excluding others.",
+      "topics": ["moral circle", "farmed animals", "social movements", "moral consideration"],
+      "evidence_type": "Research reports and historical case studies",
+      "access": "Public HTML reports and downloadable data",
+      "reuse": "Check the terms attached to individual reports and datasets.",
+      "references": [
+        {
+          "label": "Research",
+          "url": "https://www.sentienceinstitute.org/research"
+        }
+      ]
+    },
+    {
+      "id": "our-world-in-data",
+      "name": "Animal Welfare at Our World in Data",
+      "domain": "ourworldindata.org",
+      "url": "https://ourworldindata.org/animal-welfare",
+      "category": "global",
+      "annotation": "The best single entry point to Our World in Data’s animal-welfare work. It gathers writing, charts, and downloadable data on slaughter, factory farming, housing systems, aquatic animals, pain, and public attitudes.",
+      "topics": ["animal counts", "factory farming", "slaughter", "welfare data"],
+      "evidence_type": "Topic synthesis, articles, charts, and datasets",
+      "access": "Public HTML, downloadable CSV and JSON, chart API",
+      "reuse": "OWID writing, charts, and OWID-produced data are generally CC BY 4.0; third-party data retain their source terms.",
+      "references": [
+        {
+          "label": "How many animals are slaughtered every day?",
+          "url": "https://ourworldindata.org/how-many-animals-get-slaughtered-every-day"
+        },
+        {
+          "label": "How many animals are factory-farmed?",
+          "url": "https://ourworldindata.org/how-many-animals-are-factory-farmed"
+        }
+      ]
+    },
+    {
+      "id": "fao",
+      "name": "FAOSTAT and fisheries statistics",
+      "domain": "fao.org",
+      "url": "https://www.fao.org/faostat/en/#data",
+      "category": "global",
+      "annotation": "The primary international source for country-reported livestock, slaughter, fisheries, and aquaculture statistics. Many later estimates begin with FAO records, including attempts to convert aquatic-animal tonnage into individual animals.",
+      "topics": ["livestock", "slaughter", "fisheries", "aquaculture", "official statistics"],
+      "evidence_type": "Official international statistics",
+      "access": "Interactive databases, bulk downloads, and APIs",
+      "reuse": "FAO database terms and source-specific conditions apply.",
+      "references": [
+        {
+          "label": "Fisheries and aquaculture statistics",
+          "url": "https://www.fao.org/fishery/en/statistics"
+        }
+      ]
+    },
+    {
+      "id": "faunalytics",
+      "name": "Faunalytics research library",
+      "domain": "faunalytics.org",
+      "url": "https://faunalytics.org/?s=&post_type=post&orderby=post_date&order=desc&explore=true",
+      "category": "global",
+      "annotation": "A large, continually updated collection of research summaries and original studies. It spans animals used for food and science, wild and companion animals, public attitudes, and the effectiveness of attempts to help animals.",
+      "topics": ["research summaries", "farmed animals", "wild animals", "public attitudes"],
+      "evidence_type": "Research library and original studies",
+      "access": "Public searchable HTML",
+      "reuse": "Publicly readable; check item-level terms before reuse.",
+      "references": [
+        {
+          "label": "Fundamentals",
+          "url": "https://faunalytics.org/fundamentals/"
+        },
+        {
+          "label": "Faunalytics studies",
+          "url": "https://faunalytics.org/research/"
+        }
+      ]
+    },
+    {
+      "id": "animal-clock",
+      "name": "Animal Clock",
+      "domain": "animalclock.org",
+      "url": "https://animalclock.org/",
+      "category": "global",
+      "annotation": "A real-time counter that turns annual estimates of animals killed for food in the United States into rates. It includes land animals and estimated wild-caught and farmed aquatic animals.",
+      "topics": ["animal counts", "slaughter", "United States", "aquatic animals"],
+      "evidence_type": "Modeled real-time counter",
+      "access": "Public HTML and JavaScript",
+      "reuse": "No general reuse license is stated.",
+      "references": []
+    },
+    {
+      "id": "sentient-media",
+      "name": "Sentient Media",
+      "domain": "sentientmedia.org",
+      "url": "https://sentientmedia.org/",
+      "category": "farmed",
+      "annotation": "Independent reporting and explainers on factory farming, fisheries, animal welfare, food systems, climate, health, and policy. It combines current investigations with accessible background pieces on how animal industries operate.",
+      "topics": ["factory farming", "journalism", "food systems", "policy", "fisheries"],
+      "evidence_type": "Independent journalism and explainers",
+      "access": "Public HTML without an account or paywall; ordinary article crawling is allowed by robots.txt.",
+      "reuse": "All rights reserved; reproduction, distribution, transmission, and caching require prior written permission.",
+      "references": [
+        {
+          "label": "Terms of use",
+          "url": "https://sentientmedia.org/terms-of-use/"
+        }
+      ]
+    },
+    {
+      "id": "inside-animal-ag",
+      "name": "Inside Animal Ag",
+      "domain": "insideanimalag.org",
+      "url": "https://insideanimalag.org/",
+      "category": "farmed",
+      "annotation": "A research-based guide to the structure and effects of U.S. factory farming. Its linked subject guides cover animal numbers and treatment alongside slaughterhouses, industry structure, workers, public health, government, land, water, climate, and biodiversity.",
+      "topics": ["factory farming", "United States", "animal treatment", "industry structure"],
+      "evidence_type": "Research-based reference guide",
+      "access": "Public HTML; robots.txt permits crawling with a delay.",
+      "reuse": "All rights reserved.",
+      "references": [
+        {
+          "label": "Content guide",
+          "url": "https://insideanimalag.org/content-guide/"
+        }
+      ]
+    },
+    {
+      "id": "welfare-footprint",
+      "name": "Welfare Footprint Project",
+      "domain": "welfarefootprint.org",
+      "url": "https://welfarefootprint.org/",
+      "category": "farmed",
+      "annotation": "A framework for comparing welfare through the intensity and duration of negative experiences and the number of animals affected. Its applied studies estimate cumulative time spent in pain under different production systems.",
+      "topics": ["pain", "welfare measurement", "farmed animals", "quantitative comparison"],
+      "evidence_type": "Quantitative welfare framework and applied research",
+      "access": "Public HTML papers and reports",
+      "reuse": "Check the terms attached to individual publications.",
+      "references": [
+        {
+          "label": "Analytical approach",
+          "url": "https://welfarefootprint.org/research-projects/analytical-approach/"
+        },
+        {
+          "label": "Pain-Track",
+          "url": "https://welfarefootprint.org/pain-track/"
+        }
+      ]
+    },
+    {
+      "id": "fishcount",
+      "name": "Fishcount",
+      "domain": "fishcount.org.uk",
+      "url": "https://fishcount.org.uk/",
+      "category": "aquatic",
+      "annotation": "The main source for estimates of individual fish caught from the wild and produced in aquaculture. Fishcount converts tonnage into animal counts and documents welfare problems during capture, transport, and slaughter.",
+      "topics": ["fish", "aquaculture", "wild catch", "slaughter", "animal counts"],
+      "evidence_type": "Modeled estimates and welfare research",
+      "access": "Public HTML reports, tables, and downloadable documents",
+      "reuse": "Check the terms attached to individual estimates and publications.",
+      "references": [
+        {
+          "label": "Wild-caught fish estimates",
+          "url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-fish-caught-from-the-wild-each-year"
+        },
+        {
+          "label": "Farmed fish estimates",
+          "url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year"
+        }
+      ]
+    },
+    {
+      "id": "sea-around-us",
+      "name": "Sea Around Us",
+      "domain": "seaaroundus.org",
+      "url": "https://www.seaaroundus.org/",
+      "category": "aquatic",
+      "annotation": "A research initiative that reconstructs marine catches by country, taxon, fishing sector, and destination. Its estimates include discards, small-scale fishing, and unreported catch often missing from official landings.",
+      "topics": ["marine catch", "fisheries", "discards", "unreported catch"],
+      "evidence_type": "Academic catch reconstruction and database",
+      "access": "Public HTML, interactive data, and downloads",
+      "reuse": "Project citation and data-use terms apply.",
+      "references": [
+        {
+          "label": "Data",
+          "url": "https://www.seaaroundus.org/data/#/eez"
+        },
+        {
+          "label": "Methods",
+          "url": "https://www.seaaroundus.org/catch-reconstruction-and-allocation-methods/"
+        }
+      ]
+    },
+    {
+      "id": "wild-animal-initiative",
+      "name": "Wild Animal Initiative",
+      "domain": "wildanimalinitiative.org",
+      "url": "https://www.wildanimalinitiative.org/",
+      "category": "wild",
+      "annotation": "The leading research organization focused specifically on the welfare of free-living animals. Its work develops field methods, reviews welfare-relevant ecology, maps research priorities, and supports the growth of wild-animal welfare science.",
+      "topics": ["wild-animal welfare", "ecology", "welfare measurement", "research priorities"],
+      "evidence_type": "Research program, reviews, and field methods",
+      "access": "Public HTML research library and papers",
+      "reuse": "Check the terms attached to individual publications.",
+      "references": [
+        {
+          "label": "Research",
+          "url": "https://www.wildanimalinitiative.org/research"
+        }
+      ]
+    },
+    {
+      "id": "wild-animal-welfare-committee",
+      "name": "Wild Animal Welfare Committee",
+      "domain": "wawcommittee.org",
+      "url": "https://wawcommittee.org/",
+      "category": "wild",
+      "annotation": "An independent UK committee examining the welfare of free-living animals affected by human activity. Its publications show how welfare evidence can change decisions about wildlife management, conservation, conflict, and population control.",
+      "topics": ["wildlife management", "policy", "welfare assessment", "United Kingdom"],
+      "evidence_type": "Independent expert analysis and policy advice",
+      "access": "Public HTML reports and publications",
+      "reuse": "Check the terms attached to individual publications.",
+      "references": [
+        {
+          "label": "Resources",
+          "url": "https://www.wawcommittee.org/resources"
+        }
+      ]
+    },
+    {
+      "id": "eu-alures",
+      "name": "EU Animals in Science and ALURES",
+      "domain": "environment.ec.europa.eu",
+      "url": "https://environment.ec.europa.eu/topics/chemicals/animals-science/statistics-and-non-technical-project-summaries_en",
+      "category": "research",
+      "annotation": "The European Commission’s transparency system for animals used in scientific procedures. It reports species, numbers, purposes, origins, genetic status, and the severity assigned to procedures across EU member states and Norway.",
+      "topics": ["laboratory animals", "scientific procedures", "severity", "official statistics"],
+      "evidence_type": "Official regional statistics and project records",
+      "access": "Public dashboards and full dataset exports",
+      "reuse": "European Commission reuse rules and dataset-specific notices apply.",
+      "references": [
+        {
+          "label": "ALURES dataset export",
+          "url": "https://environmental-data.ec.europa.eu/alures/datasets.html"
+        }
+      ]
+    },
+    {
+      "id": "psychedelics-cluster-headache",
+      "name": "Psychedelics and cluster headache",
+      "domain": "medicine.yale.edu",
+      "url": "https://medicine.yale.edu/news-article/yales-pioneering-research-on-psychedelics-gives-hope-to-headache-disorder-community",
+      "category": "suffering",
+      "annotation": "A readable overview of Yale’s clinical research on psilocybin, LSD, and DMT for cluster headache, a disorder defined by attacks of extreme pain. It explains early findings and ongoing studies without presenting psychedelics as established cures.",
+      "topics": ["cluster headache", "pain", "DMT", "psychedelics", "treatment access"],
+      "evidence_type": "Institutional research overview",
+      "access": "Public HTML",
+      "reuse": "Free to read; Yale University copyright applies.",
+      "references": [
+        {
+          "label": "DMT international survey abstract",
+          "url": "https://www.neurology.org/doi/10.1212/WNL.0000000000215894"
+        },
+        {
+          "label": "Open-access Swedish treatment survey",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11048603/"
+        },
+        {
+          "label": "Psilocybin randomized-trial extension",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38581739/"
+        }
+      ]
+    },
+    {
+      "id": "hedweb",
+      "name": "The Hedonistic Imperative",
+      "domain": "hedweb.com",
+      "url": "https://www.hedweb.com/",
+      "category": "future",
+      "annotation": "David Pearce’s long-running argument that biotechnology could eventually replace suffering with gradients of well-being in humans and nonhuman animals. The archive connects genetics, consciousness, animal ethics, and the future redesign of ecosystems.",
+      "topics": ["abolition of suffering", "biotechnology", "animal ethics", "future ecosystems"],
+      "evidence_type": "Philosophical and technological essays",
+      "access": "Static public HTML",
+      "reuse": "Author copyright applies.",
+      "references": [
+        {
+          "label": "The Abolitionist Project",
+          "url": "https://www.hedweb.com/abolitionist-project/index.html"
+        }
+      ]
+    },
+    {
+      "id": "herbivorize",
+      "name": "Herbivorize Predators",
+      "domain": "herbivorize.org",
+      "url": "https://herbivorize.org/",
+      "category": "future",
+      "annotation": "A speculative proposal to use directed evolution to let predatory species survive without killing other animals.",
+      "topics": ["predation", "directed evolution", "wild-animal suffering", "future ecosystems"],
+      "evidence_type": "Speculative proposal",
+      "access": "Public HTML",
+      "reuse": "No general reuse license is stated.",
+      "references": []
+    }
+  ]
+}

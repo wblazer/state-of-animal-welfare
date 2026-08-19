@@ -1,4 +1,6 @@
 dist/
+.astro/
+node_modules/
 .amp/
 .DS_Store
 __pycache__/

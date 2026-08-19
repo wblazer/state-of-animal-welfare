@@ -1,0 +1,83 @@
+---
+import { catalog, entriesFor } from "../lib/catalog";
+import "../styles/global.css";
+
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: catalog.name,
+  description: catalog.description,
+  dateModified: catalog.updated,
+  license: "https://creativecommons.org/licenses/by/4.0/",
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: catalog.entries.length,
+    itemListElement: catalog.entries.map((entry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "CreativeWork",
+        name: entry.name,
+        url: entry.url,
+        description: entry.annotation,
+        genre: entry.evidence_type,
+        keywords: entry.topics,
+        citation: entry.references.map((reference) => reference.url),
+        isAccessibleForFree: true,
+      },
+    })),
+  },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{catalog.name}</title>
+    <meta name="description" content={catalog.description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="alternate" type="text/plain" href={`${base}llms.txt`} title="LLM-readable source list" />
+    <link rel="alternate" type="application/json" href={`${base}catalog.json`} title="Source catalog as JSON" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to reading list</a>
+    <main id="main">
+      <header class="intro">
+        <h1>{catalog.name}</h1>
+        <p>{catalog.introduction}</p>
+      </header>
+
+      {
+        catalog.categories.map((category) => (
+          <section class="category" id={category.id}>
+            <h2>{category.title}</h2>
+            <p class="category-description">{category.description}</p>
+            <ul class="reading-list">
+              {entriesFor(category.id).map((entry) => (
+                <li>
+                  <h3>
+                    <a href={entry.url}>{entry.name}</a>
+                    <span class="source-domain">{entry.domain}</span>
+                  </h3>
+                  <p class="annotation">{entry.annotation}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · metadata <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
+      </div>
+    </footer>
+  </body>
+</html>

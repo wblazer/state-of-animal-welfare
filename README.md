@@ -1,30 +1,29 @@
-# The State of Animal Welfare
+# Animal Welfare Reading List
 
-Evidence about animal sentience, animal suffering, and possible futures for sentient life.
+A curated, annotated library of writing, research, and data on animal welfare.
 
-Primary links point to the most relevant durable site or page. Summaries are original; linked content is not copied.
+Primary links point to the most relevant durable site or page. Annotations are original; linked content is not copied.
 
 ## Build and run
 
-The project has no third-party dependencies.
-
 ```bash
-python3 build.py
-bun server.js
+npm install
+npm run build
+npm run preview
 ```
 
 Then open `http://localhost:8080`.
 
 ## Outputs
 
-`python3 build.py` validates `data/catalog.json` and generates:
+Astro validates `src/data/catalog.json` and generates:
 
 - A complete static HTML page
 - `catalog.json` and `catalog.csv`
 - JSON-LD in the HTML document
 - `llms.txt` and `robots.txt`
 
-Generated files live in `dist/` and are not committed.
+The build has no client-side JavaScript. Generated files live in `dist/` and are not committed.
 
 ## Licenses
 
