@@ -2,7 +2,7 @@
 
 ## Batch summary
 
-This batch reviews all 26 catalog entries categorized as `aquatic` or `wild`, prioritizing sources that add rigorous sentience, scale, applied-welfare, or wild-animal reasoning over broad advocacy and duplicate organizational roots. Recommendations: **13 KEEP, 5 KEEP-PAGES, 0 VERIFY, 8 REMOVE**.
+This batch reviews all 26 catalog entries categorized as `aquatic` or `wild`, prioritizing sources that add rigorous sentience, scale, applied-welfare, or wild-animal reasoning over broad advocacy and duplicate organizational roots. Recommendations: **12 KEEP, 5 KEEP-PAGES, 0 VERIFY, 9 REMOVE**.
 
 | ID | Source | Q | Gaps | Access | Rights | Unique | Recommendation | Rationale |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ This batch reviews all 26 catalog entries categorized as `aquatic` or `wild`, pr
 | fish-welfare-initiative | Fish Welfare Initiative | Q4 | G4, G5, G6, G7, G10 | A3 | U | U2 | KEEP | Original field programs and candid intervention reports show how fish-welfare principles survive practical constraints in major producing countries. |
 | fishcount | Fishcount | Q4 | G1, G2, G4, G7 | A3 | C | U2 | KEEP | Its transparent conversions from fisheries tonnage to individual-animal estimates make otherwise hidden aquatic scale legible. |
 | fishethogroup | FishEthoGroup | Q4 | G2, G3, G6, G8 | A3 | M | U2 | KEEP | Researcher-produced species profiles translate fish ethology into specific aquaculture welfare requirements. |
-| insect-welfare-and-ethics-open-database | Insect Welfare and Ethics Open Database | Q4 | G2, G3, G11 | A2 | M | U2 | KEEP | This maintained specialist bibliography is an unusually comprehensive discovery layer for a fragmented and uncertain field. |
+| insect-welfare-and-ethics-open-database | Insect Welfare and Ethics Open Database | Q1 | G2, G3, G11 | A0 | U | U0 | REMOVE | The OSF node no longer exists, and its active successor is the Insect Welfare Research Society library already represented by another catalog entry. |
 | insect-welfare-research-society | Insect Welfare Research Society | Q4 | G2, G3, G6 | A3 | C | U1 | KEEP-PAGES | Keep its scientific resources and conference outputs rather than thin society and membership pages. |
 | msd-veterinary-manual-fish | MSD Veterinary Manual: Fish | Q4 | G1, G6, G8 | A3 | C | U1 | KEEP-PAGES | The aquarium-fish clinical chapters provide expert actionable husbandry and disease guidance, while the wider manual is out of scope. |
 | rethink-priorities-animal-welfare | Rethink Priorities — Animal Welfare | Q5 | G2, G3, G4, G5, G7, G9, G10 | A3 | C | U2 | KEEP | Its original quantitative work on moral weights, fish, shrimp, insects, and uncertainty directly targets several benchmark failures. |
@@ -36,6 +36,5 @@ This batch reviews all 26 catalog entries categorized as `aquatic` or `wild`, pr
 ## Uncertainties
 
 - Fish Welfare Initiative's statement that its information is freely available is affirmative but not a standard license, so the parent reviewer should decide whether `U` or `P` best reflects its legal effect.
-- File-level licenses and update cadence should be checked before bulk use of the OSF Insect Welfare and Ethics Open Database.
 - Sea Around Us data and publication terms vary by product, so `M` should be confirmed against each intended download.
 - Bentham's Newsletter may contain individual paywalled posts despite its public archive, and only the named core-reader articles were judged worth retaining.

@@ -64,23 +64,29 @@
     {
       "id": "alice-crary",
       "name": "Alice Crary",
-      "domain": "alicecrary.com",
-      "url": "https://alicecrary.com/",
+      "domain": "politicalconcepts.org",
+      "url": "https://www.politicalconcepts.org/animals-alice-crary/",
       "category": "sentience",
-      "annotation": "Crary argues that animals' lives can be ethically intelligible without reducing them to abstract capacities.",
+      "annotation": "Crary argues that understanding animals morally requires more than comparing abstract capacities, and examines the institutions that make harms to animals difficult to see.",
       "topics": [
         "animal ethics",
         "moral status",
-        "philosophy"
+        "moral imagination",
+        "structural injustice"
       ],
-      "evidence_type": "scholar website",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "author or publisher copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
+      "evidence_type": "philosophy essays",
+      "access": "Full public HTML observed 2026-08-20",
+      "reuse": "author and publisher copyright applies.",
+      "references": [
+        {
+          "label": "The Animal Crisis Is a Human Crisis",
+          "url": "https://www.bostonreview.net/articles/the-animal-crisis-is-a-human-crisis/"
+        }
+      ],
+      "link_pattern": "article plus related essay",
       "assessment": {
-        "value": "unrated",
-        "notes": "scholar website"
+        "value": "high",
+        "notes": "Distinctive critique of capacity-based moral status and structural account of animal harm"
       }
     },
     {
@@ -1456,29 +1462,6 @@
       }
     },
     {
-      "id": "insect-welfare-and-ethics-open-database",
-      "name": "Insect Welfare and Ethics Open Database",
-      "domain": "osf.io",
-      "url": "https://osf.io/8m67v/",
-      "category": "aquatic",
-      "annotation": "An open bibliography and research collection for insect welfare and ethics.",
-      "topics": [
-        "insect welfare",
-        "ethics",
-        "bibliography",
-        "research data"
-      ],
-      "evidence_type": "open research dataset",
-      "access": "Public OSF metadata and files observed 2026-08-20",
-      "reuse": "file-level licenses must be checked.",
-      "references": [],
-      "link_pattern": "dataset root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused open-data source"
-      }
-    },
-    {
       "id": "insect-welfare-research-society",
       "name": "Insect Welfare Research Society",
       "domain": "insectwelfare.com",
@@ -1790,29 +1773,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "authoritative veterinary source"
-      }
-    },
-    {
-      "id": "spca-international",
-      "name": "SPCA International",
-      "domain": "spcai.org",
-      "url": "https://www.spcai.org/",
-      "category": "companion",
-      "annotation": "Reports and program material on companion and working animals in varied international settings.",
-      "topics": [
-        "companion animals",
-        "working animals",
-        "disaster response",
-        "global programs"
-      ],
-      "evidence_type": "international nonprofit",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "site copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "global companion-animal source"
       }
     },
     {
@@ -2690,29 +2650,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused documentation source"
-      }
-    },
-    {
-      "id": "zuri",
-      "name": "Zuri",
-      "domain": "zuri.media",
-      "url": "https://zuri.media/",
-      "category": "strategy",
-      "annotation": "Reporting and essays that place animals within wider questions about justice and the environment.",
-      "topics": [
-        "animals",
-        "climate",
-        "justice",
-        "culture"
-      ],
-      "evidence_type": "independent publication",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "site copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "publication"
       }
     },
     {

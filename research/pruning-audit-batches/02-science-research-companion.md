@@ -2,7 +2,7 @@
 
 ## Batch summary
 
-The 23 entries include several cornerstone scientific and regulatory resources, but broad journal/search roots, duplicated 3Rs material, and two misleading or weakly targeted roots need tighter curation. Recommendations: **7 KEEP, 9 KEEP-PAGES, 1 VERIFY, and 6 REMOVE**.
+The 23 entries include several cornerstone scientific and regulatory resources, but broad journal/search roots, duplicated 3Rs material, and two misleading or weakly targeted roots need tighter curation. Recommendations: **7 KEEP, 8 KEEP-PAGES, 1 VERIFY, and 7 REMOVE**.
 
 | ID | Source | Q | Gaps | Access | Rights | Unique | Recommendation | Rationale |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ The 23 entries include several cornerstone scientific and regulatory resources, 
 | massey-animal-welfare-science-and-bioethics-centre | Massey Animal Welfare Science and Bioethics Centre | Q5 | G3, G4, G6, G8 | A3 | M | U2 | KEEP-PAGES | The original Five Domains scholarship uniquely links physical conditions to subjective experience and positive welfare, but the centre landing page should point to the open-licensed framework papers. |
 | ufaw-animal-welfare-knowledge-hub | UFAW Animal Welfare Knowledge Hub | Q5 | G3, G4, G8 | A1 | C | U2 | VERIFY | UFAW's expert species and welfare references are potentially irreplaceable, but the audit currently reports a 403 while the catalog reports public access and the organization has since rebranded as Science for Animal Welfare. |
 | avma-animal-welfare | AVMA Animal Welfare | Q4 | G4, G5, G6, G8 | A3 | C | U2 | KEEP-PAGES | Current veterinarian-reviewed policies and literature reviews provide unusually actionable companion-animal, humane-ending, abuse, disaster, and procedure guidance, but the full hub extends far beyond companions. |
-| spca-international | SPCA International | Q3 | G5, G6, G7, G10 | A3 | C | U1 | KEEP-PAGES | Selected program reports add scarce international shelter, street-animal, working-animal, and emergency cases, while the donation-heavy root and general pet advice are weak training material. |
+| spca-international | SPCA International | Q2 | G5, G6, G7, G10 | A3 | C | U0 | REMOVE | The root is principally rescue promotion and fundraising, while its public educational archive is mostly brief, dated pet-care advice and does not compete with the retained AVMA material. |
 | bioethics-research-library-animals | Bioethics Research Library: Animals | Q2 | G5, G11 | A3 | M | U0 | REMOVE | The catalog URL now redirects to Georgetown's generic bioethics library rather than a maintained animal bibliography, so AWIC and CCAC are more usable research-animal references. |
 | canadian-council-on-animal-care-handbooks | Canadian Council on Animal Care Handbooks | Q5 | G4, G5, G6, G7 | A3 | C | U2 | KEEP | These authoritative, detailed national guidelines operationalize ethical review, species care, endpoints, facilities, and the 3Rs across Canadian research institutions. |
 | eu-alures | EU Animals in Science and ALURES | Q5 | G2, G4, G5, G7, G10 | A2 | M | U2 | KEEP | Official downloadable EU and Norway statistics and non-technical project summaries uniquely expose species, purpose, severity, and scale across jurisdictions, subject to dataset notices. |

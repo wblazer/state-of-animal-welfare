@@ -6,7 +6,7 @@ This batch reviews all 33 catalog entries categorized as `sentience` or `sufferi
 
 | ID | Source | Q | Gaps | Access | Rights | Unique | Recommendation | Rationale |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| alice-crary | [Alice Crary](https://alicecrary.com/) | Q5 | G2, G8, G11 | A3 | C | U2 | KEEP-PAGES | Retain her animal-ethics papers because their relational account of seeing animals as morally intelligible corrects the list's capacity-and-aggregation bias. |
+| alice-crary | [Alice Crary: “Animals”](https://www.politicalconcepts.org/animals-alice-crary/) | Q5 | G2, G8, G11 | A3 | C | U2 | KEEP-PAGES | Retain her animal-ethics papers because their relational account of seeing animals as morally intelligible corrects the list's capacity-and-aggregation bias. |
 | andy-masley | [Andy Masley](https://blog.andymasley.com/) | Q3 | G3, G4, G5 | A3 | C | U1 | KEEP-PAGES | Select only the unusually careful animal-welfare essays because the publication is broad and its informal posts vary in depth. |
 | stanford-animal-consciousness | [Animal Consciousness](https://plato.stanford.edu/entries/consciousness-animal/) | Q5 | G3, G11 | A3 | C | U2 | KEEP | This expert-authored, bibliographically dense and updated encyclopedia entry is the strongest conceptual map of animal-consciousness evidence and disputes. |
 | animal-sentience | [Animal Sentience](https://www.sciencedirect.com/journal/animal-sentience) | Q4 | G3, G11 | A1 | M | U0 | REMOVE | The proprietary, bot-restricted journal root is a poor training-oriented target compared with the crawlable Stanford entry and original open papers. |

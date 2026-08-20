@@ -2,7 +2,7 @@
 
 ## Batch summary
 
-This batch reviews all 36 catalog entries in `strategy` and `future`, favoring durable, evidence-bearing material that directly addresses the benchmarked reasoning gaps over movement news, personal commentary, and overlapping directories. Recommendations: **KEEP 6**, **KEEP-PAGES 16**, **VERIFY 1**, **REMOVE 13**.
+This batch reviews all 36 catalog entries in `strategy` and `future`, favoring durable, evidence-bearing material that directly addresses the benchmarked reasoning gaps over movement news, personal commentary, and overlapping directories. Recommendations: **KEEP 6**, **KEEP-PAGES 15**, **VERIFY 1**, **REMOVE 14**.
 
 | ID | Source | Q | Gaps | Access | Rights | Unique | Recommendation | Rationale |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ This batch reviews all 36 catalog entries in `strategy` and `future`, favoring d
 | the-friendly-vegan | The Friendly Vegan | Q2 | G1,G5,G6 | A2 | C | U0 | REMOVE | Accessible low-conflict introductions are shallow and redundant with better evidenced communication and practical-ethics material. |
 | the-simple-heart | The Simple Heart | Q3 | G1,G6,G7,G11 | A3 | C | U1 | KEEP-PAGES | Select essays connecting individual rescue, institutions, and moral courage provide useful direct-versus-systemic reasoning, but the personal archive is uneven and partisan. |
 | we-animals | We Animals | Q4 | G1,G2,G4,G9,G10 | A3 | M | U2 | KEEP-PAGES | Its professionally captioned global investigations uniquely make hidden animals and harms salient, while image licensing and limited text favor focused projects over the stock archive. |
-| zuri | Zuri | Q3 | G1,G5,G9,G10,G11 | A3 | C | U1 | KEEP-PAGES | Selected reported essays can connect animals to climate, culture, and justice, but the publication's wider commentary is uneven for this purpose. |
+| zuri | Zuri | Q1 | G1,G5,G9,G10,G11 | A0 | C | U0 | REMOVE | The domain now belongs to an unrelated web-design and digital-marketing agency; the animal-welfare publication is no longer available at the catalog URL. |
 | ai-for-animals | AI for Animals | Q3 | G1,G6,G7 | A3 | C | U0 | REMOVE | The URL now redirects to Sentient Futures and the former identity is fully superseded by that catalog entry. |
 | animal-ethics | Animal Ethics | Q4 | G2,G3,G4,G6,G7,G8,G9,G11 | A3 | C | U2 | KEEP | Its maintained, highly structured library uniquely joins sentience, speciesism, multiple ethical theories, wild-animal suffering, and future impacts in crawlable prose. |
 | animal-welfare-alignment-newsletter | Animal Welfare Alignment Newsletter | Q4 | G1,G2,G3,G4,G6,G7 | A2 | C | U2 | KEEP | Anima International's new specialist team directly analyzes training data, evaluation, policy, and the strategic problem of preserving animal interests in advanced AI. |

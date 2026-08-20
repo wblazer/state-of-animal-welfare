@@ -2,37 +2,37 @@
 
 Research snapshot: 2026-08-20
 
-This audit rates all 173 sources in the Animal Welfare Reading List for a quality-first pruning pass. It treats the catalog as a set of links, not as permission to copy or train on the linked works. The 62 `REMOVE` decisions were applied to the catalog on 2026-08-20; the other recommendations remain for manual review.
+This audit rates all 173 sources in the Animal Welfare Reading List for a quality-first pruning pass. It treats the catalog as a set of links, not as permission to copy or train on the linked works. The 65 `REMOVE` decisions were applied to the catalog on 2026-08-20; the other recommendations remain for manual review.
 
 ## Result
 
 | Recommendation | Sources | Meaning |
 | --- | ---: | --- |
-| `KEEP` | 41 | The current root or section is focused, strong, and useful enough to retain. |
-| `KEEP-PAGES` | 63 | Do not retain the broad root unchanged; replace it with a small set of reviewed pages or sections. |
+| `KEEP` | 40 | The current root or section is focused, strong, and useful enough to retain. |
+| `KEEP-PAGES` | 61 | Do not retain the broad root unchanged; replace it with a small set of reviewed pages or sections. |
 | `VERIFY` | 7 | Resolve a material quality, maintenance, access, or rights question before deciding. |
-| `REMOVE` | 62 | Remove because the source is redundant, weak, off-scope, dead, too restricted, or poorly targeted at its current URL. |
+| `REMOVE` | 65 | Remove because the source is redundant, weak, off-scope, dead, too restricted, or poorly targeted at its current URL. |
 
-The first pruning pass reduced the catalog from 173 to 111 entries. Those remaining entries comprise 41 roots, 63 sources awaiting page-level curation, and seven awaiting verification. `KEEP-PAGES` is a curation task, not approval to leave the existing root link unchanged.
+The pruning pass reduced the catalog from 173 to 108 entries. Those remaining entries comprise 40 roots, 61 sources awaiting page-level curation, and seven awaiting verification. `KEEP-PAGES` is a curation task, not approval to leave the existing root link unchanged.
 
 ### Recommendation by review batch
 
 | Subjects | Rated | Keep | Keep pages | Verify | Remove | Detailed ratings |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
 | Sentience and suffering | 33 | 4 | 16 | 2 | 11 | [Chapter 1](pruning-audit-batches/01-sentience-suffering.md) |
-| Welfare science, research, and companion animals | 23 | 7 | 9 | 1 | 6 | [Chapter 2](pruning-audit-batches/02-science-research-companion.md) |
+| Welfare science, research, and companion animals | 23 | 7 | 8 | 1 | 7 | [Chapter 2](pruning-audit-batches/02-science-research-companion.md) |
 | Global data and law | 25 | 4 | 12 | 1 | 8 | [Chapter 3](pruning-audit-batches/03-global-law.md) |
 | Farmed animals | 30 | 7 | 5 | 2 | 16 | [Chapter 4](pruning-audit-batches/04-farmed.md) |
-| Aquatic and wild animals | 26 | 13 | 5 | 0 | 8 | [Chapter 5](pruning-audit-batches/05-aquatic-wild.md) |
-| Strategy and possible futures | 36 | 6 | 16 | 1 | 13 | [Chapter 6](pruning-audit-batches/06-strategy-future.md) |
-| **Total** | **173** | **41** | **63** | **7** | **62** | |
+| Aquatic and wild animals | 26 | 12 | 5 | 0 | 9 | [Chapter 5](pruning-audit-batches/05-aquatic-wild.md) |
+| Strategy and possible futures | 36 | 6 | 15 | 1 | 14 | [Chapter 6](pruning-audit-batches/06-strategy-future.md) |
+| **Total** | **173** | **40** | **61** | **7** | **65** | |
 
 Each chapter contains one row per source with its quality, LLM-gap coverage, access, rights, uniqueness, recommendation, and rationale. Catalog IDs are preserved so the decisions can be applied mechanically after review.
 
 ## Main findings
 
 1. **The long tail is genuinely weak.** Most removals are shallow personal publications, campaign or institutional landing pages, broad search results, redundant commentary, or sources that barely concern experienced welfare.
-2. **A broad root is often the wrong unit.** Sixty-three sources contain valuable work but also unrelated, uneven, ephemeral, or restricted material. These should become root-plus-highlights or article-only entries.
+2. **A broad root is often the wrong unit.** Sixty-one sources contain valuable work but also unrelated, uneven, ephemeral, or restricted material. These should become root-plus-highlights or article-only entries.
 3. **High quality does not guarantee inclusion.** The audit removes ten Q4/Q5 sources because they are off-scope, superseded, proprietary, bot-blocked, or focused on something other than animals' experiences.
 4. **Technical access and rights are separate.** A source can be readable and crawlable while remaining conventionally copyrighted. Conversely, some excellent sources explicitly signal `ai-train=no` or block major AI crawlers.
 5. **The most important benchmark gaps remain covered.** The proposed retained set preserves strong material on sentience uncertainty, species consistency, scale, practical decisions, economic and social objections, positive welfare, wild animals, aquatic animals, invertebrates, global variation, and non-consequentialist ethics.
@@ -45,10 +45,10 @@ Each chapter contains one row per source with its quality, LLM-gap coverage, acc
 | Rating | Sources | Definition |
 | --- | ---: | --- |
 | Q5 | 34 | Authoritative or original, rigorous, and maintained. |
-| Q4 | 60 | Strong expert synthesis, scholarship, reporting, or applied guidance. |
-| Q3 | 57 | Useful but mixed, uneven, narrow, or less established. |
-| Q2 | 20 | Shallow, weakly sourced, or readily replaceable. |
-| Q1 | 2 | Broken, misleading at the current URL, or unusable. |
+| Q4 | 59 | Strong expert synthesis, scholarship, reporting, or applied guidance. |
+| Q3 | 55 | Useful but mixed, uneven, narrow, or less established. |
+| Q2 | 21 | Shallow, weakly sourced, or readily replaceable. |
+| Q1 | 4 | Broken, misleading at the current URL, or unusable. |
 
 Quality is not an aggregate score. A high-quality but inaccessible or off-scope source can still be removed; a narrower Q3 source can survive if it fills a difficult gap that stronger sources do not.
 
@@ -56,10 +56,10 @@ Quality is not an aggregate score. A high-quality but inaccessible or off-scope 
 
 | Rating | Sources | Definition |
 | --- | ---: | --- |
-| A3 | 100 | Open and readily crawlable HTML, feeds, or downloads. |
-| A2 | 58 | Public but platform-dependent, dynamic, partially restricted, or inconsistently accessible. |
+| A3 | 99 | Open and readily crawlable HTML, feeds, or downloads. |
+| A2 | 57 | Public but platform-dependent, dynamic, partially restricted, or inconsistently accessible. |
 | A1 | 13 | Substantial paywall, proprietary host, repeated denial, or AI-crawler restriction. |
-| A0 | 2 | Dead, parked, or no longer the claimed source. |
+| A0 | 4 | Dead, parked, or no longer the claimed source. |
 
 The automated audit checked 255 catalog and highlight links: 238 returned normally, 17 were restricted, and none were missing or failed at that time. The policy audit covered 175 origins and 173 primary pages; two observations were inconclusive.
 
@@ -68,10 +68,10 @@ The automated audit checked 255 catalog and highlight links: 238 returned normal
 | Rating | Sources | Definition |
 | --- | ---: | --- |
 | P | 8 | A standard permissive license or public-domain status was found at the relevant target. |
-| M | 35 | Rights vary by article, dataset, author, or asset. |
+| M | 34 | Rights vary by article, dataset, author, or asset. |
 | C | 119 | Conventional copyright; no affirmative general training or reuse permission found. |
 | X | 7 | Explicitly restrictive terms, a no-derivatives license, or an `ai-train=no`/AI-crawler signal. |
-| U | 4 | Material rights facts remained unclear after review. |
+| U | 5 | Material rights facts remained unclear after review. |
 
 These labels record public signals, not legal conclusions. `robots.txt`, HTTP headers, and `Content-Signal` describe technical or expressed preferences; they do not by themselves settle copyright or contract questions.
 
@@ -79,9 +79,9 @@ These labels record public signals, not legal conclusions. `robots.txt`, HTTP he
 
 | Rating | Sources | Definition |
 | --- | ---: | --- |
-| U2 | 66 | Hard to replace within this collection. |
-| U1 | 60 | Materially distinct, but alternatives exist. |
-| U0 | 47 | Redundant, peripheral, or better represented elsewhere. |
+| U2 | 65 | Hard to replace within this collection. |
+| U1 | 58 | Materially distinct, but alternatives exist. |
+| U0 | 50 | Redundant, peripheral, or better represented elsewhere. |
 
 ### LLM reasoning gaps
 
@@ -103,7 +103,7 @@ The gap taxonomy comes from the [frontier-model benchmark review](animal-welfare
 
 ## Sources recommended as roots or focused sections
 
-These 41 sources are the strongest candidates to retain at their current level of aggregation.
+These 40 sources are the strongest candidates to retain at their current level of aggregation.
 
 ### Sentience and moral consideration
 
@@ -146,7 +146,6 @@ These 41 sources are the strongest candidates to retain at their current level o
 - `fish-welfare-initiative` — Fish Welfare Initiative
 - `fishcount` — Fishcount
 - `fishethogroup` — FishEthoGroup
-- `insect-welfare-and-ethics-open-database` — Insect Welfare and Ethics Open Database
 - `rethink-priorities-animal-welfare` — Rethink Priorities — Animal Welfare
 - `rethinking-insects-as-alternative-protein` — Rethinking insects as alternative protein
 - `sea-around-us` — Sea Around Us
@@ -180,8 +179,8 @@ Until these questions are resolved, the catalog may continue linking to the sour
 
 ## Recommended pruning sequence
 
-1. **Completed: remove the 62 `REMOVE` entries.** The ten Q4/Q5 removals remain documented because scope or access—not intrinsic quality—drove those decisions.
-2. **Curate the 63 `KEEP-PAGES` entries.** Add two to five durable, substantive pages where available, then decide whether the broad root still adds navigational value.
+1. **Completed: remove the 65 `REMOVE` entries.** The ten Q4/Q5 removals remain documented because scope or access—not intrinsic quality—drove those decisions.
+2. **Curate the 61 `KEEP-PAGES` entries.** Add two to five durable, substantive pages where available, then decide whether the broad root still adds navigational value.
 3. **Resolve the seven `VERIFY` entries.** Rights questions may require author or publisher clarification rather than another technical check.
 4. **Normalize catalog metadata.** Replace the current sparse `assessment` field with this audit's quality, gaps, access, rights, uniqueness, recommendation, rationale, and review date.
 5. **Recheck coverage after pruning.** In particular, protect companion and working animals, positive welfare, non-Western material, and non-consequentialist ethics; these areas are already thinner than farmed-animal strategy and general advocacy.
