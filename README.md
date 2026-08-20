@@ -16,7 +16,9 @@ Then open `http://localhost:8080`.
 
 ## Outputs
 
-Astro validates `src/data/catalog.json` and generates:
+`src/data/catalog.json` is the single source of truth. Every source is rendered in its subject category, in alphabetical order. Topics, access, reuse, link pattern, references, and optional editorial assessments remain available as metadata; assessments do not affect whether or where a source appears.
+
+Astro validates the catalog and generates:
 
 - A complete static HTML page
 - `catalog.json` and `catalog.csv`

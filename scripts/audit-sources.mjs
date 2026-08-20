@@ -2,14 +2,9 @@ import { createHash } from "node:crypto";
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { mergeCatalog } from "../src/lib/candidate-catalog.js";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = path.join(projectRoot, "src/data/catalog.json");
-const candidatePaths = [
-  path.join(projectRoot, "src/data/publication-candidates.csv"),
-  path.join(projectRoot, "src/data/additional-candidates.csv"),
-];
 const defaultBaselinePath = path.join(projectRoot, "data/source-audit-baseline.json");
 const defaultOutputDirectory = path.join(projectRoot, ".source-audit");
 const userAgent =
@@ -64,6 +59,16 @@ export function catalogErrors(catalog) {
   ) {
     errors.push("Catalog updated must be an ISO date (YYYY-MM-DD)");
   }
+  const assessmentValues = new Set(["high", "useful", "specialized", "unrated"]);
+  if (!isRecord(catalog.assessment_scale)) {
+    errors.push("Catalog assessment_scale must be an object");
+  } else {
+    for (const value of assessmentValues) {
+      if (!isNonemptyString(catalog.assessment_scale[value])) {
+        errors.push(`Catalog assessment_scale.${value} must be a nonempty string`);
+      }
+    }
+  }
 
   const categories = Array.isArray(catalog.categories) ? catalog.categories : [];
   const entries = Array.isArray(catalog.entries) ? catalog.entries : [];
@@ -109,6 +114,16 @@ export function catalogErrors(catalog) {
       errors.push(`${location}.topics must contain at least one topic`);
     } else if (entry.topics.some((topic) => !isNonemptyString(topic))) {
       errors.push(`${location}.topics must contain only nonempty strings`);
+    }
+    if (!isRecord(entry.assessment)) {
+      errors.push(`${location}.assessment must be an object`);
+    } else {
+      if (!assessmentValues.has(entry.assessment.value)) {
+        errors.push(`${location}.assessment.value must be high, useful, specialized, or unrated`);
+      }
+      if (entry.assessment.notes !== undefined && !isNonemptyString(entry.assessment.notes)) {
+        errors.push(`${location}.assessment.notes must be a nonempty string when present`);
+      }
     }
 
     if (entryIds.has(entry.id)) errors.push(`Duplicate entry ID: ${entry.id}`);
@@ -545,8 +560,14 @@ export function comparePolicySnapshots(baseline, current) {
   const unverified = [];
 
   for (const section of ["robots", "pages", "policies"]) {
-    const beforeSection = baseline?.[section] ?? {};
-    const afterSection = current?.[section] ?? {};
+    const stablePageKeys = (observations) =>
+      section === "pages"
+        ? Object.fromEntries(
+            Object.entries(observations).map(([key, observation]) => [observation?.url ?? key, observation]),
+          )
+        : observations;
+    const beforeSection = stablePageKeys(baseline?.[section] ?? {});
+    const afterSection = stablePageKeys(current?.[section] ?? {});
     const keys = [...new Set([...Object.keys(beforeSection), ...Object.keys(afterSection)])].sort();
 
     for (const key of keys) {
@@ -658,12 +679,8 @@ async function readJson(filename) {
   return JSON.parse(await readFile(filename, "utf8"));
 }
 
-async function readCatalog(baseFilename, candidateFilenames = []) {
-  const [baseCatalog, ...candidateCsvs] = await Promise.all([
-    readJson(baseFilename),
-    ...candidateFilenames.map((filename) => readFile(filename, "utf8")),
-  ]);
-  return mergeCatalog(baseCatalog, candidateCsvs);
+async function readCatalog(filename) {
+  return readJson(filename);
 }
 
 async function writeReport(directory, name, report, markdown) {
@@ -692,11 +709,8 @@ function parseArguments(argv) {
 }
 
 async function auditLinks(catalog, options) {
-  const previousCandidatePaths = options.previousCandidates
-    ? options.previousCandidates.split(",").filter(Boolean).map((filename) => path.resolve(filename))
-    : [];
   const previousCatalog = options.previousCatalog
-    ? await readCatalog(path.resolve(options.previousCatalog), previousCandidatePaths)
+    ? await readCatalog(path.resolve(options.previousCatalog))
     : null;
   if (previousCatalog) assertValidCatalog(previousCatalog);
   const links = collectLinks(catalog, previousCatalog);
@@ -777,7 +791,7 @@ async function main() {
   const options = parseArguments(process.argv.slice(2));
   options.outputDirectory = path.resolve(options.outputDirectory ?? defaultOutputDirectory);
   options.baseline = path.resolve(options.baseline ?? defaultBaselinePath);
-  const catalog = await readCatalog(catalogPath, candidatePaths);
+  const catalog = await readCatalog(catalogPath);
   assertValidCatalog(catalog);
 
   if (options.mode === "validate") {

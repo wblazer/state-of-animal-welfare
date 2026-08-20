@@ -9,10 +9,8 @@ on:
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
-      - "src/data/*.csv"
       - "src/data/catalog.json"
       - "src/lib/catalog.*"
-      - "src/lib/candidate-catalog.js"
   pull_request:
     paths:
       - ".github/workflows/source-audit.yml"
@@ -20,10 +18,8 @@ on:
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
-      - "src/data/*.csv"
       - "src/data/catalog.json"
       - "src/lib/catalog.*"
-      - "src/lib/candidate-catalog.js"
   workflow_dispatch:
     inputs:
       audit:
@@ -75,11 +71,8 @@ jobs:
           args=(links --output-directory .source-audit)
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             git show "$BASE_SHA:src/data/catalog.json" > "$RUNNER_TEMP/previous-catalog.json"
-            git show "$BASE_SHA:src/data/publication-candidates.csv" > "$RUNNER_TEMP/previous-publications.csv" || : > "$RUNNER_TEMP/previous-publications.csv"
-            git show "$BASE_SHA:src/data/additional-candidates.csv" > "$RUNNER_TEMP/previous-additional.csv" || : > "$RUNNER_TEMP/previous-additional.csv"
             args+=(
               --previous-catalog "$RUNNER_TEMP/previous-catalog.json"
-              --previous-candidates "$RUNNER_TEMP/previous-publications.csv,$RUNNER_TEMP/previous-additional.csv"
               --fail-on-attention
             )
           fi

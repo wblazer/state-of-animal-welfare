@@ -15,8 +15,8 @@ const fields = [
   "access",
   "reuse",
   "references",
-  "review_status",
-  "scope_fit",
+  "value",
+  "assessment_notes",
   "link_pattern",
 ] as const;
 
@@ -30,8 +30,8 @@ export const GET: APIRoute = () => {
       ...entry,
       topics: entry.topics.join(" | "),
       references: entry.references.map((reference) => `${reference.label}: ${reference.url}`).join(" | "),
-      review_status: entry.review_status ?? "",
-      scope_fit: entry.scope_fit ?? "",
+      value: entry.assessment.value,
+      assessment_notes: entry.assessment.notes ?? "",
       link_pattern: entry.link_pattern ?? "",
     };
     return fields.map((field) => cell(String(values[field]))).join(",");
