@@ -1,13 +1,18 @@
 {
   "name": "Animal Welfare Reading List",
-  "description": "A curated, annotated library of writing, research, and data on animal welfare.",
-  "introduction": "A curated, annotated library of the best writing, research, and data on animal welfare.",
-  "updated": "2026-08-19",
+  "description": "An annotated library of writing, research, and data on the welfare of sentient animals.",
+  "introduction": "Writing, research, and data on what animals experience, how many are affected, and what could change.",
+  "updated": "2026-08-20",
   "categories": [
     {
       "id": "sentience",
       "title": "Sentience and moral consideration",
       "description": "What conscious experience is, which animals may have it, and why their experiences matter."
+    },
+    {
+      "id": "welfare-science",
+      "title": "Welfare science and measurement",
+      "description": "How pain, pleasure, health, behavior, and quality of life can be observed and compared."
     },
     {
       "id": "global",
@@ -30,9 +35,24 @@
       "description": "The welfare of free-living animals, including suffering from natural causes and human activity."
     },
     {
+      "id": "companion",
+      "title": "Companion and working animals",
+      "description": "The welfare of animals living and working with people, including shelter and veterinary care."
+    },
+    {
       "id": "research",
       "title": "Animals used in research",
       "description": "Official records of animal use in science and the severity assigned to experimental procedures."
+    },
+    {
+      "id": "law",
+      "title": "Law and public policy",
+      "description": "How legal systems classify animals, protect them, and determine which harms are permitted."
+    },
+    {
+      "id": "strategy",
+      "title": "Advocacy and social change",
+      "description": "Research and arguments about changing institutions, industries, public attitudes, and behavior."
     },
     {
       "id": "suffering",

@@ -10,6 +10,9 @@ export const GET: APIRoute = () => {
     lines.push(`## ${category.title}`, "", category.description, "");
     for (const entry of entriesFor(category.id)) {
       lines.push(`- [${entry.name}](${entry.url}): ${entry.annotation}`);
+      for (const reference of entry.references) {
+        lines.push(`  - [${reference.label}](${reference.url})`);
+      }
     }
     lines.push("");
   }

@@ -1,4 +1,7 @@
 import data from "../data/catalog.json";
+import additionalCandidates from "../data/additional-candidates.csv?raw";
+import publicationCandidates from "../data/publication-candidates.csv?raw";
+import { mergeCatalog } from "./candidate-catalog.js";
 
 export interface CatalogCategory {
   id: string;
@@ -24,6 +27,9 @@ export interface CatalogEntry {
   reuse: string;
   references: CatalogReference[];
   policy_urls?: CatalogReference[];
+  review_status?: "selected" | "candidate";
+  scope_fit?: string;
+  link_pattern?: string;
 }
 
 export interface Catalog {
@@ -53,13 +59,20 @@ function validateCatalog(value: Catalog): Catalog {
     if (!entry.url.startsWith("https://")) {
       throw new Error(`Non-HTTPS primary URL for ${entry.id}`);
     }
+    for (const reference of entry.references) {
+      if (!reference.url.startsWith("https://")) {
+        throw new Error(`Non-HTTPS reference URL for ${entry.id}: ${reference.url}`);
+      }
+    }
     entryIds.add(entry.id);
   }
 
   return value;
 }
 
-export const catalog = validateCatalog(data as Catalog);
+export const catalog = validateCatalog(
+  mergeCatalog(data, [publicationCandidates, additionalCandidates]) as Catalog,
+);
 
 export function entriesFor(categoryId: string): CatalogEntry[] {
   return catalog.entries.filter((entry) => entry.category === categoryId);

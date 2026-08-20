@@ -15,6 +15,9 @@ const fields = [
   "access",
   "reuse",
   "references",
+  "review_status",
+  "scope_fit",
+  "link_pattern",
 ] as const;
 
 function cell(value: string): string {
@@ -27,6 +30,9 @@ export const GET: APIRoute = () => {
       ...entry,
       topics: entry.topics.join(" | "),
       references: entry.references.map((reference) => `${reference.label}: ${reference.url}`).join(" | "),
+      review_status: entry.review_status ?? "",
+      scope_fit: entry.scope_fit ?? "",
+      link_pattern: entry.link_pattern ?? "",
     };
     return fields.map((field) => cell(String(values[field]))).join(",");
   });

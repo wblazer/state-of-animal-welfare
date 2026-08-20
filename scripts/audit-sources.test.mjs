@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { candidatesFromCsv, mergeCatalog, parseCsv } from "../src/lib/candidate-catalog.js";
 
 import {
   catalogErrors,
@@ -9,6 +10,31 @@ import {
   normalizePolicyText,
   parseRobots,
 } from "./audit-sources.mjs";
+
+const candidateCsv = `name,root_url,platform,subjects,reason_to_inspect,link_pattern,map_or_highlights,discovered_via,access_and_rights_snapshot,scope_fit,primary_category
+"Example, with comma","https://example.com/","blog","animal ethics; welfare","A quoted, useful description.","root plus highlights","https://example.com/first-post","test","Public HTML; author copyright applies.","focused","sentience"
+`;
+
+test("candidate CSV parsing preserves quoted commas and highlights", () => {
+  assert.equal(parseCsv(candidateCsv)[0].name, "Example, with comma");
+  const [entry] = candidatesFromCsv(candidateCsv);
+  assert.equal(entry.category, "sentience");
+  assert.deepEqual(entry.topics, ["animal ethics", "welfare"]);
+  assert.deepEqual(entry.references, [{ label: "First post", url: "https://example.com/first-post" }]);
+  assert.match(entry.reuse, /copyright/);
+});
+
+test("candidate merge keeps section roots but removes matching curated sources and duplicate URLs", () => {
+  const base = {
+    entries: [{ id: "curated", name: "Example, with comma", url: "https://example.com/selected" }],
+  };
+  const otherCsv = candidateCsv.replaceAll("example.com", "other.example");
+  const merged = mergeCatalog(base, [candidateCsv, otherCsv, otherCsv]);
+
+  assert.equal(merged.entries.length, 2);
+  assert.equal(merged.entries[0].review_status, "selected");
+  assert.equal(merged.entries[1].url, "https://other.example/");
+});
 
 test("catalog validation checks nested links", () => {
   const catalog = {
@@ -106,6 +132,17 @@ test("policy comparison reports changes but not inconclusive fetches", () => {
   const comparison = comparePolicySnapshots(baseline, current);
   assert.equal(comparison.changes.length, 1);
   assert.equal(comparison.unverified.length, 1);
+});
+
+test("policy comparison does not infer a change from an inconclusive baseline", () => {
+  const baseline = {
+    pages: { example: { state: "unverified", status: 429 } },
+  };
+  const current = {
+    pages: { example: { state: "available", status: 200, signals: {} } },
+  };
+
+  assert.deepEqual(comparePolicySnapshots(baseline, current), { changes: [], unverified: [] });
 });
 
 test("policy comparison ignores transport-only differences", () => {

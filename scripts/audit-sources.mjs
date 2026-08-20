@@ -2,9 +2,14 @@ import { createHash } from "node:crypto";
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { mergeCatalog } from "../src/lib/candidate-catalog.js";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = path.join(projectRoot, "src/data/catalog.json");
+const candidatePaths = [
+  path.join(projectRoot, "src/data/publication-candidates.csv"),
+  path.join(projectRoot, "src/data/additional-candidates.csv"),
+];
 const defaultBaselinePath = path.join(projectRoot, "data/source-audit-baseline.json");
 const defaultOutputDirectory = path.join(projectRoot, ".source-audit");
 const userAgent =
@@ -438,7 +443,8 @@ function compactRobotsAgents(agents) {
 function observationState(response, { missingIsAbsent = false } = {}) {
   if (response.status === null || response.status >= 500) return "unverified";
   if (missingIsAbsent && response.status === 404) return "absent";
-  if ([401, 403, 405, 406, 418, 429, 451].includes(response.status)) return "restricted";
+  if (response.status === 429) return "unverified";
+  if ([401, 403, 405, 406, 418, 451].includes(response.status)) return "restricted";
   if (response.status >= 400) return "unverified";
   return "available";
 }
@@ -550,6 +556,7 @@ export function comparePolicySnapshots(baseline, current) {
         unverified.push({ section, key, observation: after });
         continue;
       }
+      if (before?.state === "unverified") continue;
       if (JSON.stringify(comparableObservation(before)) !== JSON.stringify(comparableObservation(after))) {
         changes.push({ section, key, before: before ?? null, after: after ?? null });
       }
@@ -651,6 +658,14 @@ async function readJson(filename) {
   return JSON.parse(await readFile(filename, "utf8"));
 }
 
+async function readCatalog(baseFilename, candidateFilenames = []) {
+  const [baseCatalog, ...candidateCsvs] = await Promise.all([
+    readJson(baseFilename),
+    ...candidateFilenames.map((filename) => readFile(filename, "utf8")),
+  ]);
+  return mergeCatalog(baseCatalog, candidateCsvs);
+}
+
 async function writeReport(directory, name, report, markdown) {
   await mkdir(directory, { recursive: true });
   await Promise.all([
@@ -677,7 +692,12 @@ function parseArguments(argv) {
 }
 
 async function auditLinks(catalog, options) {
-  const previousCatalog = options.previousCatalog ? await readJson(path.resolve(options.previousCatalog)) : null;
+  const previousCandidatePaths = options.previousCandidates
+    ? options.previousCandidates.split(",").filter(Boolean).map((filename) => path.resolve(filename))
+    : [];
+  const previousCatalog = options.previousCatalog
+    ? await readCatalog(path.resolve(options.previousCatalog), previousCandidatePaths)
+    : null;
   if (previousCatalog) assertValidCatalog(previousCatalog);
   const links = collectLinks(catalog, previousCatalog);
   const results = await runPool(links, async (link) => {
@@ -757,7 +777,7 @@ async function main() {
   const options = parseArguments(process.argv.slice(2));
   options.outputDirectory = path.resolve(options.outputDirectory ?? defaultOutputDirectory);
   options.baseline = path.resolve(options.baseline ?? defaultBaselinePath);
-  const catalog = await readJson(catalogPath);
+  const catalog = await readCatalog(catalogPath, candidatePaths);
   assertValidCatalog(catalog);
 
   if (options.mode === "validate") {

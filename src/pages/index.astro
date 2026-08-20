@@ -26,7 +26,6 @@ const jsonLd = {
         genre: entry.evidence_type,
         keywords: entry.topics,
         citation: entry.references.map((reference) => reference.url),
-        isAccessibleForFree: true,
       },
     })),
   },
@@ -66,6 +65,15 @@ const jsonLd = {
                     <span class="source-domain">{entry.domain}</span>
                   </h3>
                   <p class="annotation">{entry.annotation}</p>
+                  {
+                    entry.references.length > 0 && (
+                      <ul class="highlights" aria-label={`Selected pages from ${entry.name}`}>
+                        {entry.references.map((reference) => (
+                          <li><a href={reference.url}>{reference.label}</a></li>
+                        ))}
+                      </ul>
+                    )
+                  }
                 </li>
               ))}
             </ul>
