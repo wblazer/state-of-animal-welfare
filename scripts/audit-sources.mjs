@@ -568,7 +568,7 @@ export function comparePolicySnapshots(baseline, current) {
         : observations;
     const beforeSection = stablePageKeys(baseline?.[section] ?? {});
     const afterSection = stablePageKeys(current?.[section] ?? {});
-    const keys = [...new Set([...Object.keys(beforeSection), ...Object.keys(afterSection)])].sort();
+    const keys = Object.keys(afterSection).sort();
 
     for (const key of keys) {
       const before = beforeSection[key];

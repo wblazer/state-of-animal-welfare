@@ -2,7 +2,7 @@
 
 Research snapshot: 2026-08-20
 
-This audit rates all 173 sources in the Animal Welfare Reading List for a quality-first pruning pass. It treats the catalog as a set of links, not as permission to copy or train on the linked works. No public catalog entries were removed during this audit.
+This audit rates all 173 sources in the Animal Welfare Reading List for a quality-first pruning pass. It treats the catalog as a set of links, not as permission to copy or train on the linked works. The 62 `REMOVE` decisions were applied to the catalog on 2026-08-20; the other recommendations remain for manual review.
 
 ## Result
 
@@ -13,7 +13,7 @@ This audit rates all 173 sources in the Animal Welfare Reading List for a qualit
 | `VERIFY` | 7 | Resolve a material quality, maintenance, access, or rights question before deciding. |
 | `REMOVE` | 62 | Remove because the source is redundant, weak, off-scope, dead, too restricted, or poorly targeted at its current URL. |
 
-If accepted, the catalog would move from 173 current entries to 104 retained source records: 41 roots and 63 page-curated sources. Up to seven more could survive verification. `KEEP-PAGES` is a curation task, not approval to leave the existing root link unchanged.
+The first pruning pass reduced the catalog from 173 to 111 entries. Those remaining entries comprise 41 roots, 63 sources awaiting page-level curation, and seven awaiting verification. `KEEP-PAGES` is a curation task, not approval to leave the existing root link unchanged.
 
 ### Recommendation by review batch
 
@@ -180,7 +180,7 @@ Until these questions are resolved, the catalog may continue linking to the sour
 
 ## Recommended pruning sequence
 
-1. **Remove the 62 `REMOVE` entries.** Review the rationale in each chapter first, especially the ten Q4/Q5 removals where scope or access—not intrinsic quality—drives the decision.
+1. **Completed: remove the 62 `REMOVE` entries.** The ten Q4/Q5 removals remain documented because scope or access—not intrinsic quality—drove those decisions.
 2. **Curate the 63 `KEEP-PAGES` entries.** Add two to five durable, substantive pages where available, then decide whether the broad root still adds navigational value.
 3. **Resolve the seven `VERIFY` entries.** Rights questions may require author or publisher clarification rather than another technical check.
 4. **Normalize catalog metadata.** Replace the current sparse `assessment` field with this audit's quality, gaps, access, rights, uniqueness, recommendation, rationale, and review date.

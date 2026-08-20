@@ -55,11 +55,6 @@
       "description": "Research and arguments about changing institutions, industries, public attitudes, and behavior."
     },
     {
-      "id": "suffering",
-      "title": "Reasoning about suffering",
-      "description": "Evidence on severe pain, treatments, and the institutions that determine which treatments are studied."
-    },
-    {
       "id": "future",
       "title": "Possible futures",
       "description": "Proposals for using greater knowledge and technological capacity to reduce suffering more radically."
@@ -142,29 +137,6 @@
       }
     },
     {
-      "id": "animal-sentience",
-      "name": "Animal Sentience",
-      "domain": "sciencedirect.com",
-      "url": "https://www.sciencedirect.com/journal/animal-sentience",
-      "category": "sentience",
-      "annotation": "Topically excellent but a weaker fit for the project's training-data purpose because it sits on a proprietary publisher platform.",
-      "topics": [
-        "sentience",
-        "cognition",
-        "welfare",
-        "philosophy"
-      ],
-      "evidence_type": "Elsevier journal",
-      "access": "Public abstracts and mixed full-text access; no publication-wide CC notice found in the 2026-08-19 survey",
-      "reuse": "deprioritize unless individual articles are openly licensed.",
-      "references": [],
-      "link_pattern": "article highlights only",
-      "assessment": {
-        "value": "unrated",
-        "notes": "rights caution"
-      }
-    },
-    {
       "id": "animal-studies-journal",
       "name": "Animal Studies Journal",
       "domain": "uowoajournals.org",
@@ -185,34 +157,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused scholarship; rights caution"
-      }
-    },
-    {
-      "id": "animals-society-institute",
-      "name": "Animals & Society Institute",
-      "domain": "animalsandsociety.org",
-      "url": "https://www.animalsandsociety.org/",
-      "category": "sentience",
-      "annotation": "Interdisciplinary material on institutions, culture, and human-animal relations.",
-      "topics": [
-        "human-animal studies",
-        "policy",
-        "scholarship",
-        "education"
-      ],
-      "evidence_type": "research nonprofit",
-      "access": "Public HTML",
-      "reuse": "linked scholarship has varied rights.",
-      "references": [
-        {
-          "label": "Human animal studies",
-          "url": "https://www.animalsandsociety.org/human-animal-studies/"
-        }
-      ],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused interdisciplinary"
       }
     },
     {
@@ -270,29 +214,6 @@
       }
     },
     {
-      "id": "celeste-land",
-      "name": "celeste-land",
-      "domain": "ceselder.substack.com",
-      "url": "https://ceselder.substack.com/",
-      "category": "sentience",
-      "annotation": "A mixed personal and philosophical publication with recurring vegan and effective-altruist reasoning.",
-      "topics": [
-        "utilitarianism",
-        "veganism",
-        "effective altruism",
-        "personal ethics"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "mixed root"
-      }
-    },
-    {
       "id": "duck-dive",
       "name": "duck dive",
       "domain": "duckdives.substack.com",
@@ -312,28 +233,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused reasoning"
-      }
-    },
-    {
-      "id": "expanding-circle",
-      "name": "Expanding Circle",
-      "domain": "expandingcircle.substack.com",
-      "url": "https://expandingcircle.substack.com/",
-      "category": "sentience",
-      "annotation": "Book reviews and reflective writing may surface important texts and arguments that institutional sites miss.",
-      "topics": [
-        "animal welfare",
-        "books",
-        "moral-circle expansion"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused"
       }
     },
     {
@@ -511,50 +410,6 @@
       }
     },
     {
-      "id": "per-se",
-      "name": "Per Se",
-      "domain": "theperse.substack.com",
-      "url": "https://theperse.substack.com/",
-      "category": "sentience",
-      "annotation": "A concise publication explicitly centered on animals, ethics, and philosophy.",
-      "topics": [
-        "animals",
-        "ethics",
-        "philosophy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused ethics"
-      }
-    },
-    {
-      "id": "philosophy-and-animal-minds",
-      "name": "Philosophy and Animal Minds",
-      "domain": "medium.com",
-      "url": "https://medium.com/philosophy-and-animal-minds",
-      "category": "sentience",
-      "annotation": "Essays by researchers and philosophers on what animal-mind science means and how it should be interpreted.",
-      "topics": [
-        "animal cognition",
-        "consciousness",
-        "philosophy"
-      ],
-      "evidence_type": "Medium publication",
-      "access": "Public article pages observed 2026-08-20",
-      "reuse": "Medium and author terms apply and some pages may be metered.",
-      "references": [],
-      "link_pattern": "publication root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "publication with access caution"
-      }
-    },
-    {
       "id": "relations-beyond-anthropocentrism",
       "name": "Relations: Beyond Anthropocentrism",
       "domain": "ledonline.it",
@@ -697,29 +552,6 @@
       }
     },
     {
-      "id": "tatjana-visak",
-      "name": "Tatjana Višak",
-      "domain": "tatjanavisak.com",
-      "url": "https://tatjanavisak.com/",
-      "category": "sentience",
-      "annotation": "Philosophical work on killing animals, well-being, and the ethics of human uses of animals.",
-      "topics": [
-        "animal ethics",
-        "killing",
-        "welfare",
-        "moral status"
-      ],
-      "evidence_type": "scholar website",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "author copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "scholar website"
-      }
-    },
-    {
       "id": "the-abolitionist-approach",
       "name": "The Abolitionist Approach",
       "domain": "abolitionistapproach.com",
@@ -763,74 +595,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "mixed root"
-      }
-    },
-    {
-      "id": "travis-talks",
-      "name": "Travis Talks",
-      "domain": "travistalks.substack.com",
-      "url": "https://travistalks.substack.com/",
-      "category": "sentience",
-      "annotation": "Animal ethics argued in the language of academic moral philosophy.",
-      "topics": [
-        "animal ethics",
-        "metaethics",
-        "moral philosophy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused ethics"
-      }
-    },
-    {
-      "id": "united-states-of-exception",
-      "name": "United States of Exception",
-      "domain": "statesofexception.substack.com",
-      "url": "https://statesofexception.substack.com/",
-      "category": "sentience",
-      "annotation": "Mixed-topic moral writing that places animal welfare beside recognized human harms.",
-      "topics": [
-        "animal welfare",
-        "effective altruism",
-        "rights",
-        "foreign policy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "mixed root"
-      }
-    },
-    {
-      "id": "upf-centre-for-animal-ethics",
-      "name": "UPF Centre for Animal Ethics",
-      "domain": "upf.edu",
-      "url": "https://www.upf.edu/web/cae-center-for-animal-ethics",
-      "category": "sentience",
-      "annotation": "Interdisciplinary animal-ethics research with useful European and multilingual perspectives.",
-      "topics": [
-        "animal ethics",
-        "communication",
-        "law",
-        "policy"
-      ],
-      "evidence_type": "academic center",
-      "access": "Public institutional HTML observed 2026-08-20",
-      "reuse": "university copyright applies.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused academic source"
       }
     },
     {
@@ -885,30 +649,6 @@
       }
     },
     {
-      "id": "animal-welfare-science-open-research",
-      "name": "Animal Welfare Science Open Research",
-      "domain": "osf.io",
-      "url": "https://osf.io/search/?q=animal%20welfare",
-      "category": "welfare-science",
-      "annotation": "A broad search across open project files, datasets, protocols, and preprints related to animal welfare.",
-      "topics": [
-        "animal welfare",
-        "data",
-        "protocols",
-        "preprints",
-        "open science"
-      ],
-      "evidence_type": "open research repository search",
-      "access": "Public OSF metadata and files observed 2026-08-20",
-      "reuse": "every project and file has its own license.",
-      "references": [],
-      "link_pattern": "search root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "broad open-research index"
-      }
-    },
-    {
       "id": "animals",
       "name": "Animals",
       "domain": "mdpi.com",
@@ -937,56 +677,6 @@
       }
     },
     {
-      "id": "bmc-veterinary-research",
-      "name": "BMC Veterinary Research",
-      "domain": "bmcvetres.biomedcentral.com",
-      "url": "https://bmcvetres.biomedcentral.com/",
-      "category": "welfare-science",
-      "annotation": "Broad veterinary evidence, useful through animal-welfare searches rather than as an unfiltered root.",
-      "topics": [
-        "veterinary science",
-        "animal welfare",
-        "health"
-      ],
-      "evidence_type": "open-access journal",
-      "access": "broad root.",
-      "reuse": "Public HTML/PDF under article-level Creative Commons licenses",
-      "references": [
-        {
-          "label": "Articles",
-          "url": "https://bmcvetres.biomedcentral.com/articles?query=animal+welfare"
-        }
-      ],
-      "link_pattern": "root plus search highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "broad journal; use highlights"
-      }
-    },
-    {
-      "id": "boehringer-ingelheim-animal-health-welfare",
-      "name": "Boehringer Ingelheim Animal Health: Welfare",
-      "domain": "boehringer-ingelheim.com",
-      "url": "https://www.boehringer-ingelheim.com/animal-health/our-responsibility/animal-wellbeing",
-      "category": "welfare-science",
-      "annotation": "An industry perspective on animal health and welfare commitments, useful for comparison with independent standards.",
-      "topics": [
-        "companion animals",
-        "livestock",
-        "welfare",
-        "veterinary health"
-      ],
-      "evidence_type": "industry information section",
-      "access": "Public corporate HTML observed 2026-08-20",
-      "reuse": "corporate copyright applies.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "industry source"
-      }
-    },
-    {
       "id": "frontiers-in-veterinary-science-animal-behavior-and-welfare",
       "name": "Frontiers in Veterinary Science — Animal Behavior and Welfare",
       "domain": "frontiersin.org",
@@ -1006,29 +696,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused open scholarship"
-      }
-    },
-    {
-      "id": "journal-of-applied-animal-welfare-science",
-      "name": "Journal of Applied Animal Welfare Science",
-      "domain": "tandfonline.com",
-      "url": "https://www.tandfonline.com/journals/haaw20",
-      "category": "welfare-science",
-      "annotation": "Relevant peer-reviewed work, but access and reuse restrictions make it mainly a discovery index.",
-      "topics": [
-        "applied welfare science",
-        "companion",
-        "captive",
-        "farmed animals"
-      ],
-      "evidence_type": "Taylor & Francis journal",
-      "access": "Public metadata with mixed/paywalled full text; no sitewide CC",
-      "reuse": "use only individually open-licensed articles.",
-      "references": [],
-      "link_pattern": "article highlights only",
-      "assessment": {
-        "value": "unrated",
-        "notes": "rights caution"
       }
     },
     {
@@ -1091,29 +758,6 @@
       }
     },
     {
-      "id": "aciar-livestock-systems",
-      "name": "ACIAR Livestock Systems",
-      "domain": "aciar.gov.au",
-      "url": "https://www.aciar.gov.au/program/livestock-systems",
-      "category": "global",
-      "annotation": "Applied research on livestock systems and animal health across the Asia-Pacific region.",
-      "topics": [
-        "livestock",
-        "development",
-        "husbandry",
-        "Asia-Pacific"
-      ],
-      "evidence_type": "government research program",
-      "access": "Public Australian government HTML and reports observed 2026-08-20",
-      "reuse": "government reuse and item-level terms apply.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "regional agriculture source"
-      }
-    },
-    {
       "id": "africa-network-for-animal-welfare",
       "name": "Africa Network for Animal Welfare",
       "domain": "anaw.org",
@@ -1135,27 +779,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "regional animal-welfare source"
-      }
-    },
-    {
-      "id": "animal-clock",
-      "name": "Animal Clock",
-      "domain": "animalclock.org",
-      "url": "https://animalclock.org/",
-      "category": "global",
-      "annotation": "A real-time counter that turns annual estimates of animals killed for food in the United States into rates. It includes land animals and estimated wild-caught and farmed aquatic animals.",
-      "topics": [
-        "animal counts",
-        "slaughter",
-        "United States",
-        "aquatic animals"
-      ],
-      "evidence_type": "Modeled real-time counter",
-      "access": "Public HTML and JavaScript",
-      "reuse": "No general reuse license is stated.",
-      "references": [],
-      "assessment": {
-        "value": "useful"
       }
     },
     {
@@ -1266,29 +889,6 @@
       ],
       "assessment": {
         "value": "high"
-      }
-    },
-    {
-      "id": "global-burden-of-animal-diseases",
-      "name": "Global Burden of Animal Diseases",
-      "domain": "animalhealthmetrics.org",
-      "url": "https://animalhealthmetrics.org/",
-      "category": "global",
-      "annotation": "A global effort to quantify animal health and welfare losses from disease across livestock systems.",
-      "topics": [
-        "animal disease",
-        "welfare loss",
-        "livestock",
-        "global metrics"
-      ],
-      "evidence_type": "international data program",
-      "access": "Public HTML, methods, and data products observed 2026-08-20",
-      "reuse": "dataset-specific terms apply.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "global measurement source"
       }
     },
     {
@@ -1419,117 +1019,6 @@
       }
     },
     {
-      "id": "dao-foods",
-      "name": "Dao Foods",
-      "domain": "daofoods.substack.com",
-      "url": "https://daofoods.substack.com/",
-      "category": "farmed",
-      "annotation": "Writing on bringing alternative proteins to China adds a major geographic and industrial perspective.",
-      "topics": [
-        "alternative protein",
-        "China",
-        "food systems"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused food systems/China"
-      }
-    },
-    {
-      "id": "farmkind",
-      "name": "FarmKind",
-      "domain": "farmkind.substack.com",
-      "url": "https://farmkind.substack.com/",
-      "category": "farmed",
-      "annotation": "Accessible writing about effective giving for farmed animals and the case for prioritizing their suffering.",
-      "topics": [
-        "factory farming",
-        "philanthropy",
-        "charity evaluation"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused"
-      }
-    },
-    {
-      "id": "feeding-progress",
-      "name": "Feeding Progress",
-      "domain": "feedingprogress.com",
-      "url": "https://feedingprogress.com/",
-      "category": "farmed",
-      "annotation": "Explores technical and economic routes away from animal suffering.",
-      "topics": [
-        "animal welfare",
-        "technology",
-        "progress",
-        "food systems"
-      ],
-      "evidence_type": "Substack on custom domain",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused future/food systems"
-      }
-    },
-    {
-      "id": "food-from-thought",
-      "name": "Food From Thought",
-      "domain": "unovisassetmanagement.substack.com",
-      "url": "https://unovisassetmanagement.substack.com/",
-      "category": "farmed",
-      "annotation": "Investment and industry analysis from a fund focused on replacing animal agriculture.",
-      "topics": [
-        "alternative protein",
-        "investment",
-        "food systems"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused industry"
-      }
-    },
-    {
-      "id": "food-systems-strategy-with-elysabeth",
-      "name": "Food Systems Strategy with Elysabeth",
-      "domain": "elysabethalfano.substack.com",
-      "url": "https://elysabethalfano.substack.com/",
-      "category": "farmed",
-      "annotation": "Business and investment analysis of food-system transformation.",
-      "topics": [
-        "food systems",
-        "investment",
-        "alternative protein"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused industry"
-      }
-    },
-    {
       "id": "good-food-institute",
       "name": "Good Food Institute",
       "domain": "gfi.org",
@@ -1559,78 +1048,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused food-system source"
-      }
-    },
-    {
-      "id": "good-signal",
-      "name": "Good Signal",
-      "domain": "goodsignal.com",
-      "url": "https://www.goodsignal.com/",
-      "category": "farmed",
-      "annotation": "Investor analysis of alternative-protein markets and companies.",
-      "topics": [
-        "alternative protein",
-        "investment",
-        "markets"
-      ],
-      "evidence_type": "Substack on custom domain",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused industry"
-      }
-    },
-    {
-      "id": "hatching-plans",
-      "name": "Hatching Plans",
-      "domain": "hatchingplans.substack.com",
-      "url": "https://hatchingplans.substack.com/",
-      "category": "farmed",
-      "annotation": "The Navigation Fund's farm-animal-welfare team writes about priorities and interventions.",
-      "topics": [
-        "farm-animal welfare",
-        "philanthropy",
-        "grantmaking"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused"
-      }
-    },
-    {
-      "id": "humane-slaughter-association",
-      "name": "Humane Slaughter Association",
-      "domain": "hsa.org.uk",
-      "url": "https://www.hsa.org.uk/",
-      "category": "farmed",
-      "annotation": "Detailed technical guidance on transport, restraint, stunning, and killing across farmed species.",
-      "topics": [
-        "slaughter",
-        "transport",
-        "stunning",
-        "emergency killing"
-      ],
-      "evidence_type": "research and training charity",
-      "access": "Public HTML and guides observed 2026-08-20",
-      "reuse": "HSA copyright applies.",
-      "references": [
-        {
-          "label": "Online guides",
-          "url": "https://www.hsa.org.uk/publications/online-guides"
-        }
-      ],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused technical source"
       }
     },
     {
@@ -1679,28 +1096,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "mixed root"
-      }
-    },
-    {
-      "id": "more-than-meats-the-eye",
-      "name": "More Than Meats The Eye",
-      "domain": "morethanmeatstheeye.substack.com",
-      "url": "https://morethanmeatstheeye.substack.com/",
-      "category": "farmed",
-      "annotation": "In-depth analysis of strategies for reducing global meat consumption.",
-      "topics": [
-        "meat reduction",
-        "intervention strategy",
-        "food systems"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused"
       }
     },
     {
@@ -1754,28 +1149,6 @@
       }
     },
     {
-      "id": "paul-shapiro",
-      "name": "Paul Shapiro",
-      "domain": "paulhshapiro.substack.com",
-      "url": "https://paulhshapiro.substack.com/",
-      "category": "farmed",
-      "annotation": "Industry-facing writing from the author of Clean Meat and a cultivated-food entrepreneur.",
-      "topics": [
-        "alternative protein",
-        "business",
-        "animal agriculture"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "mixed/focused industry"
-      }
-    },
-    {
       "id": "pax-fauna",
       "name": "Pax Fauna",
       "domain": "paxfauna.org",
@@ -1801,98 +1174,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused strategy/research"
-      }
-    },
-    {
-      "id": "project-slingshot-uk",
-      "name": "Project Slingshot UK",
-      "domain": "projectslingshotuk.substack.com",
-      "url": "https://projectslingshotuk.substack.com/",
-      "category": "farmed",
-      "annotation": "Campaign and investigative material focused on factory farming and agricultural power.",
-      "topics": [
-        "factory farming",
-        "investigations",
-        "campaigns"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy/reporting"
-      }
-    },
-    {
-      "id": "reducetarian-foundation",
-      "name": "Reducetarian Foundation",
-      "domain": "reducetarian.org",
-      "url": "https://www.reducetarian.org/",
-      "category": "farmed",
-      "annotation": "A pragmatic framework for reducing animal-product consumption without requiring all-or-nothing identity change.",
-      "topics": [
-        "meat reduction",
-        "behavior change",
-        "food systems"
-      ],
-      "evidence_type": "nonprofit",
-      "access": "Public HTML and blog",
-      "reuse": "detailed rights review still needed.",
-      "references": [
-        {
-          "label": "Blog",
-          "url": "https://www.reducetarian.org/blog"
-        }
-      ],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused introductory/strategy"
-      }
-    },
-    {
-      "id": "regressiontothemeat",
-      "name": "regressiontothemeat",
-      "domain": "regressiontothemeat.substack.com",
-      "url": "https://regressiontothemeat.substack.com/",
-      "category": "farmed",
-      "annotation": "Reports and comments on empirical research intended to reduce meat consumption.",
-      "topics": [
-        "meat reduction",
-        "behavioral research"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused research commentary"
-      }
-    },
-    {
-      "id": "robert-yaman",
-      "name": "Robert Yaman",
-      "domain": "robertyaman.substack.com",
-      "url": "https://robertyaman.substack.com/",
-      "category": "farmed",
-      "annotation": "Writing from the founder of Innovate Animal Ag can cover technologies and incentives overlooked by ethics-first sources.",
-      "topics": [
-        "animal agriculture",
-        "technology",
-        "innovation"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "mixed/focused industry"
       }
     },
     {
@@ -1945,50 +1226,6 @@
       ],
       "assessment": {
         "value": "high"
-      }
-    },
-    {
-      "id": "the-chicken-coup",
-      "name": "The Chicken Coup",
-      "domain": "thechickencoup.substack.com",
-      "url": "https://thechickencoup.substack.com/",
-      "category": "farmed",
-      "annotation": "Connects behavioral and social-science evidence to animal advocacy.",
-      "topics": [
-        "social science",
-        "animal advocacy",
-        "chickens"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused"
-      }
-    },
-    {
-      "id": "the-optimist-s-barn",
-      "name": "The Optimist's Barn",
-      "domain": "optimistsbarn.substack.com",
-      "url": "https://optimistsbarn.substack.com/",
-      "category": "farmed",
-      "annotation": "A technology-forward view of how farmed-animal welfare might improve.",
-      "topics": [
-        "farm-animal welfare",
-        "technology",
-        "innovation"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused future"
       }
     },
     {
@@ -2096,35 +1333,6 @@
       }
     },
     {
-      "id": "buglife",
-      "name": "Buglife",
-      "domain": "buglife.org.uk",
-      "url": "https://www.buglife.org.uk/",
-      "category": "aquatic",
-      "annotation": "Evidence and policy material on threats to terrestrial and freshwater invertebrates.",
-      "topics": [
-        "insects",
-        "invertebrates",
-        "pesticides",
-        "habitat",
-        "policy"
-      ],
-      "evidence_type": "conservation nonprofit",
-      "access": "Public HTML and reports observed 2026-08-20",
-      "reuse": "item-level copyright applies.",
-      "references": [
-        {
-          "label": "Resources",
-          "url": "https://www.buglife.org.uk/resources/"
-        }
-      ],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "broad invertebrate source"
-      }
-    },
-    {
       "id": "crustacean-compassion",
       "name": "Crustacean Compassion",
       "domain": "crustaceancompassion.org",
@@ -2147,29 +1355,6 @@
         }
       ],
       "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused aquatic source"
-      }
-    },
-    {
-      "id": "fish-feel",
-      "name": "Fish Feel",
-      "domain": "fishfeel.org",
-      "url": "https://fishfeel.org/",
-      "category": "aquatic",
-      "annotation": "Accessible evidence and advocacy material focused exclusively on fishes as sentient individuals.",
-      "topics": [
-        "fish sentience",
-        "welfare",
-        "fishing",
-        "aquaculture"
-      ],
-      "evidence_type": "nonprofit",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "site copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
       "assessment": {
         "value": "unrated",
         "notes": "focused aquatic source"
@@ -2444,34 +1629,6 @@
       }
     },
     {
-      "id": "the-insect-institute",
-      "name": "The Insect Institute",
-      "domain": "insectinstitute.org",
-      "url": "https://www.insectinstitute.org/",
-      "category": "aquatic",
-      "annotation": "Evidence-based analysis of the welfare, public-health, and sustainability problems surrounding insect farming.",
-      "topics": [
-        "insect farming",
-        "insect welfare",
-        "food systems",
-        "policy"
-      ],
-      "evidence_type": "research project",
-      "access": "Public HTML",
-      "reuse": "site states that content is copyright Rethink Priorities or its authors unless otherwise noted.",
-      "references": [
-        {
-          "label": "In the media",
-          "url": "https://insectinstitute.org/in-the-media"
-        }
-      ],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused invertebrates"
-      }
-    },
-    {
       "id": "the-welfare-of-farmed-nile-tilapia",
       "name": "The welfare of farmed Nile tilapia",
       "domain": "pmc.ncbi.nlm.nih.gov",
@@ -2519,29 +1676,6 @@
       }
     },
     {
-      "id": "animal-rising",
-      "name": "Animal Rising",
-      "domain": "animalrising.substack.com",
-      "url": "https://animalrising.substack.com/",
-      "category": "wild",
-      "annotation": "Campaign writing linking animal protection, ecological restoration, and climate politics.",
-      "topics": [
-        "animal rights",
-        "nature",
-        "climate",
-        "campaigns"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy"
-      }
-    },
-    {
       "id": "bentham-s-newsletter",
       "name": "Bentham's Newsletter",
       "domain": "benthams.substack.com",
@@ -2584,52 +1718,6 @@
       }
     },
     {
-      "id": "center-for-wild-animal-welfare",
-      "name": "Center for Wild Animal Welfare",
-      "domain": "wildanimalwelfare.org",
-      "url": "https://wildanimalwelfare.org/",
-      "category": "wild",
-      "annotation": "A policy-focused group working on humane alternatives to lethal control and preventable urban harms.",
-      "topics": [
-        "wild-animal welfare",
-        "poisons",
-        "fertility control",
-        "urban infrastructure"
-      ],
-      "evidence_type": "policy nonprofit",
-      "access": "Public HTML, but currently a sparse organizational site rather than a deep library",
-      "reuse": "copyright and AI signals need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused wild animals; watch as it grows"
-      }
-    },
-    {
-      "id": "how-i-learned-to-love-shrimp",
-      "name": "How I Learned to Love Shrimp",
-      "domain": "howilearnedtoloveshrimp.substack.com",
-      "url": "https://howilearnedtoloveshrimp.substack.com/",
-      "category": "wild",
-      "annotation": "Interviews with practitioners can expose intervention details and underdocumented fields.",
-      "topics": [
-        "farmed animals",
-        "wild animals",
-        "aquatic welfare",
-        "interviews"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "podcast transcripts and per-publication rights need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused; audio/transcript mix"
-      }
-    },
-    {
       "id": "wild-animal-initiative",
       "name": "Wild Animal Initiative",
       "domain": "wildanimalinitiative.org",
@@ -2656,28 +1744,6 @@
       }
     },
     {
-      "id": "wild-animal-suffering-research",
-      "name": "Wild Animal Suffering Research",
-      "domain": "was-research.org",
-      "url": "https://was-research.org/",
-      "category": "wild",
-      "annotation": "A specialized archive on the scale and causes of suffering in nature.",
-      "topics": [
-        "wild-animal suffering",
-        "population dynamics",
-        "interventions"
-      ],
-      "evidence_type": "independent research site",
-      "access": "Public HTML",
-      "reuse": "rights and current maintenance status need verification.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused wild animals"
-      }
-    },
-    {
       "id": "wild-animal-welfare-committee",
       "name": "Wild Animal Welfare Committee",
       "domain": "wawcommittee.org",
@@ -2701,34 +1767,6 @@
       ],
       "assessment": {
         "value": "high"
-      }
-    },
-    {
-      "id": "wild-welfare",
-      "name": "Wild Welfare",
-      "domain": "wildwelfare.org",
-      "url": "https://wildwelfare.org/",
-      "category": "wild",
-      "annotation": "Guidance and training material on the welfare of wild animals living under human care.",
-      "topics": [
-        "captive wild animals",
-        "zoos",
-        "sanctuaries",
-        "welfare assessment"
-      ],
-      "evidence_type": "international nonprofit",
-      "access": "Public HTML and resources observed 2026-08-20",
-      "reuse": "item-level copyright applies.",
-      "references": [
-        {
-          "label": "Resources",
-          "url": "https://wildwelfare.org/resources/"
-        }
-      ],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused captive-wildlife source"
       }
     },
     {
@@ -2775,29 +1813,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "global companion-animal source"
-      }
-    },
-    {
-      "id": "bioethics-research-library-animals",
-      "name": "Bioethics Research Library: Animals",
-      "domain": "bioethics.georgetown.edu",
-      "url": "https://bioethics.georgetown.edu/animal-research/",
-      "category": "research",
-      "annotation": "A university-curated path into bioethical literature on the use of animals in research.",
-      "topics": [
-        "bioethics",
-        "animal research",
-        "ethics",
-        "bibliography"
-      ],
-      "evidence_type": "academic bibliography",
-      "access": "Public institutional HTML observed 2026-08-20",
-      "reuse": "Georgetown copyright and linked-work rights apply.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused bibliography"
       }
     },
     {
@@ -2945,29 +1960,6 @@
       }
     },
     {
-      "id": "the-urban-animal",
-      "name": "The Urban Animal",
-      "domain": "urbananimal.substack.com",
-      "url": "https://urbananimal.substack.com/",
-      "category": "research",
-      "annotation": "First-person and legal writing around open rescue and animal experimentation.",
-      "topics": [
-        "animal rescue",
-        "law",
-        "direct action",
-        "beagles"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy/law"
-      }
-    },
-    {
       "id": "tox21",
       "name": "Tox21",
       "domain": "tox21.gov",
@@ -3033,29 +2025,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused measurement source"
-      }
-    },
-    {
-      "id": "animal-law-podcast",
-      "name": "Animal Law Podcast",
-      "domain": "ourhenhouse.org",
-      "url": "https://www.ourhenhouse.org/animallaw/",
-      "category": "law",
-      "annotation": "A long-running archive of interviews about animal litigation, legislation, and legal strategy.",
-      "topics": [
-        "animal law",
-        "litigation",
-        "legislation",
-        "interviews"
-      ],
-      "evidence_type": "podcast archive",
-      "access": "Public episode pages and audio observed 2026-08-20",
-      "reuse": "Our Hen House copyright applies.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused archive"
       }
     },
     {
@@ -3136,28 +2105,6 @@
       }
     },
     {
-      "id": "animal-policy-alliance",
-      "name": "Animal Policy Alliance",
-      "domain": "animalpolicyalliance.org",
-      "url": "https://www.animalpolicyalliance.org/",
-      "category": "law",
-      "annotation": "Policy analysis and institutional work can fill the gap between ethics and enforceable rules.",
-      "topics": [
-        "animal policy",
-        "political institutions",
-        "legislation"
-      ],
-      "evidence_type": "policy nonprofit",
-      "access": "Public HTML",
-      "reuse": "detailed rights and archive review still needed.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused policy"
-      }
-    },
-    {
       "id": "animal-policy-international",
       "name": "Animal Policy International",
       "domain": "animalpolicyinternational.org",
@@ -3205,52 +2152,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused law/research"
-      }
-    },
-    {
-      "id": "cambridge-animal-protection-program",
-      "name": "Cambridge Animal Protection Program",
-      "domain": "law.cam.ac.uk",
-      "url": "https://www.law.cam.ac.uk/research-centres/cambridge-centre-animal-rights-law",
-      "category": "law",
-      "annotation": "Cambridge-based legal scholarship and events on animal rights and protection.",
-      "topics": [
-        "animal law",
-        "rights",
-        "scholarship",
-        "policy"
-      ],
-      "evidence_type": "academic legal program",
-      "access": "Public institutional HTML observed 2026-08-20",
-      "reuse": "University of Cambridge copyright applies.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused legal source"
-      }
-    },
-    {
-      "id": "center-for-animal-law-studies",
-      "name": "Center for Animal Law Studies",
-      "domain": "law.lclark.edu",
-      "url": "https://law.lclark.edu/centers/animal_law_studies/",
-      "category": "law",
-      "annotation": "A major academic center with publications, events, and legal research devoted to animals.",
-      "topics": [
-        "animal law",
-        "scholarship",
-        "education",
-        "policy"
-      ],
-      "evidence_type": "academic center",
-      "access": "Public institutional HTML observed 2026-08-20",
-      "reuse": "Lewis & Clark copyright applies.",
-      "references": [],
-      "link_pattern": "section root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused academic source"
       }
     },
     {
@@ -3342,28 +2243,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused legal source"
-      }
-    },
-    {
-      "id": "science-and-law",
-      "name": "Science and Law",
-      "domain": "scienceandlaw.org",
-      "url": "https://www.scienceandlaw.org/",
-      "category": "law",
-      "annotation": "Material on how scientific evidence about animals enters legal and policy decisions.",
-      "topics": [
-        "animal law",
-        "science",
-        "legal evidence"
-      ],
-      "evidence_type": "research and policy project",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "no general reuse license recorded.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused project"
       }
     },
     {
@@ -3485,28 +2364,6 @@
       }
     },
     {
-      "id": "animal-save-movement",
-      "name": "Animal Save Movement",
-      "domain": "thesavemovement.org",
-      "url": "https://thesavemovement.org/",
-      "category": "strategy",
-      "annotation": "First-person documentation and campaign writing from vigils at slaughterhouses around the world.",
-      "topics": [
-        "animal agriculture",
-        "eyewitness testimony",
-        "global movement"
-      ],
-      "evidence_type": "advocacy network",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "site copyright applies.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "movement source"
-      }
-    },
-    {
       "id": "animal-think-tank-newsletter",
       "name": "Animal Think Tank Newsletter",
       "domain": "animalthinktank.substack.com",
@@ -3565,28 +2422,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "regional source"
-      }
-    },
-    {
-      "id": "baby-gaia",
-      "name": "Baby Gaia",
-      "domain": "babygaia.substack.com",
-      "url": "https://babygaia.substack.com/",
-      "category": "strategy",
-      "annotation": "Bilingual English/Spanish writing could add linguistic and cultural range.",
-      "topics": [
-        "animal freedom",
-        "culture change",
-        "bilingual advocacy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy"
       }
     },
     {
@@ -3657,49 +2492,6 @@
       }
     },
     {
-      "id": "center-for-effective-vegan-advocacy",
-      "name": "Center for Effective Vegan Advocacy",
-      "domain": "veganadvocacy.org",
-      "url": "https://www.veganadvocacy.org/",
-      "category": "strategy",
-      "annotation": "Practical material on communicating about animals and animal-product consumption more effectively.",
-      "topics": [
-        "vegan advocacy",
-        "communication",
-        "behavior change"
-      ],
-      "evidence_type": "advocacy education nonprofit",
-      "access": "Public HTML observed 2026-08-20",
-      "reuse": "no general reuse license recorded.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "advocacy strategy"
-      }
-    },
-    {
-      "id": "david-ramms",
-      "name": "David Ramms",
-      "domain": "davidramms.substack.com",
-      "url": "https://davidramms.substack.com/",
-      "category": "strategy",
-      "annotation": "Long-form arguments about vegan and animal-advocacy strategy outside mainstream movement framing.",
-      "topics": [
-        "vegan strategy",
-        "advocacy critique"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy"
-      }
-    },
-    {
       "id": "dawnwatch",
       "name": "DawnWatch",
       "domain": "dawnwatch.substack.com",
@@ -3744,71 +2536,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "focused topic on broad platform"
-      }
-    },
-    {
-      "id": "hive-highlights",
-      "name": "Hive Highlights",
-      "domain": "joinhive.substack.com",
-      "url": "https://joinhive.substack.com/",
-      "category": "strategy",
-      "annotation": "Movement updates and resources from an animal-advocacy community.",
-      "topics": [
-        "animal advocacy",
-        "community",
-        "movement opportunities"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused movement news"
-      }
-    },
-    {
-      "id": "our-hen-house",
-      "name": "Our Hen House",
-      "domain": "ourhenhouse.substack.com",
-      "url": "https://ourhenhouse.substack.com/",
-      "category": "strategy",
-      "annotation": "A long-running animal-advocacy media project with interviews and practical movement knowledge.",
-      "topics": [
-        "animal advocacy",
-        "interviews",
-        "movement news"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication; many entries are podcast-led",
-      "reuse": "transcript availability and rights need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused; audio/text mix"
-      }
-    },
-    {
-      "id": "project-phoenix",
-      "name": "Project Phoenix",
-      "domain": "projectphoenixuk.substack.com",
-      "url": "https://projectphoenixuk.substack.com/",
-      "category": "strategy",
-      "annotation": "Field-building and strategy for the UK animal-freedom movement.",
-      "topics": [
-        "animal freedom",
-        "UK movement strategy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused advocacy"
       }
     },
     {
@@ -3889,28 +2616,6 @@
       }
     },
     {
-      "id": "shallow-diver",
-      "name": "Shallow Diver",
-      "domain": "shallowdiver.substack.com",
-      "url": "https://shallowdiver.substack.com/",
-      "category": "strategy",
-      "annotation": "An individual writer's mixed but mostly animal-focused analysis.",
-      "topics": [
-        "animal issues",
-        "advocacy",
-        "philosophy"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "root plus highlights",
-      "assessment": {
-        "value": "unrated",
-        "notes": "mostly focused"
-      }
-    },
-    {
       "id": "special-interests",
       "name": "Special Interests",
       "domain": "ulazarosa.substack.com",
@@ -3930,50 +2635,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "mixed root"
-      }
-    },
-    {
-      "id": "the-animal-impact-project",
-      "name": "The Animal Impact Project",
-      "domain": "animalimpactproject.org",
-      "url": "https://www.animalimpactproject.org/",
-      "category": "strategy",
-      "annotation": "A general animal-advocacy publication with practical discussion of how people and institutions affect animals.",
-      "topics": [
-        "animal advocacy",
-        "farmed animals",
-        "movement strategy"
-      ],
-      "evidence_type": "Substack on custom domain",
-      "access": "Public HTML and RSS observed 2026-08-20",
-      "reuse": "author copyright and Substack terms apply.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "publication"
-      }
-    },
-    {
-      "id": "the-friendly-vegan",
-      "name": "The Friendly Vegan",
-      "domain": "friendlyvegan.substack.com",
-      "url": "https://friendlyvegan.substack.com/",
-      "category": "strategy",
-      "annotation": "A low-conflict, practical presentation of vegan and animal-advocacy ideas.",
-      "topics": [
-        "veganism",
-        "animal-friendly living",
-        "advocacy news"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused; introductory"
       }
     },
     {
@@ -4052,64 +2713,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "publication"
-      }
-    },
-    {
-      "id": "psychedelics-cluster-headache",
-      "name": "Psychedelics and cluster headache",
-      "domain": "medicine.yale.edu",
-      "url": "https://medicine.yale.edu/news-article/yales-pioneering-research-on-psychedelics-gives-hope-to-headache-disorder-community",
-      "category": "suffering",
-      "annotation": "A readable overview of Yale’s clinical research on psilocybin, LSD, and DMT for cluster headache, a disorder defined by attacks of extreme pain. It explains early findings and ongoing studies without presenting psychedelics as established cures.",
-      "topics": [
-        "cluster headache",
-        "pain",
-        "DMT",
-        "psychedelics",
-        "treatment access"
-      ],
-      "evidence_type": "Institutional research overview",
-      "access": "Public HTML",
-      "reuse": "Free to read; Yale University copyright applies.",
-      "references": [
-        {
-          "label": "DMT international survey abstract",
-          "url": "https://www.neurology.org/doi/10.1212/WNL.0000000000215894"
-        },
-        {
-          "label": "Open-access Swedish treatment survey",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11048603/"
-        },
-        {
-          "label": "Psilocybin randomized-trial extension",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/38581739/"
-        }
-      ],
-      "assessment": {
-        "value": "specialized"
-      }
-    },
-    {
-      "id": "ai-for-animals",
-      "name": "AI for Animals",
-      "domain": "aiforanimals.org",
-      "url": "https://www.aiforanimals.org/",
-      "category": "future",
-      "annotation": "Direct work on using and shaping AI for animal protection.",
-      "topics": [
-        "AI",
-        "animal advocacy",
-        "technical tools",
-        "future welfare"
-      ],
-      "evidence_type": "nonprofit/project",
-      "access": "Public HTML",
-      "reuse": "detailed archive, robots, and license review still needed.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused future/AI"
       }
     },
     {
@@ -4234,27 +2837,6 @@
       }
     },
     {
-      "id": "herbivorize",
-      "name": "Herbivorize Predators",
-      "domain": "herbivorize.org",
-      "url": "https://herbivorize.org/",
-      "category": "future",
-      "annotation": "A speculative proposal to use directed evolution to let predatory species survive without killing other animals.",
-      "topics": [
-        "predation",
-        "directed evolution",
-        "wild-animal suffering",
-        "future ecosystems"
-      ],
-      "evidence_type": "Speculative proposal",
-      "access": "Public HTML",
-      "reuse": "No general reuse license is stated.",
-      "references": [],
-      "assessment": {
-        "value": "specialized"
-      }
-    },
-    {
       "id": "jeff-sebo",
       "name": "Jeff Sebo",
       "domain": "jeffsebo.net",
@@ -4275,28 +2857,6 @@
       "assessment": {
         "value": "unrated",
         "notes": "scholar website"
-      }
-    },
-    {
-      "id": "sentient-futures",
-      "name": "sentient futures",
-      "domain": "sentientfutures.substack.com",
-      "url": "https://sentientfutures.substack.com/",
-      "category": "future",
-      "annotation": "Tracks work at the intersection of future trajectories and nonhuman welfare.",
-      "topics": [
-        "future nonhuman welfare",
-        "opportunities",
-        "field building"
-      ],
-      "evidence_type": "Substack",
-      "access": "Public Substack publication",
-      "reuse": "per-publication robots, paywall, and license need checking.",
-      "references": [],
-      "link_pattern": "focused root",
-      "assessment": {
-        "value": "unrated",
-        "notes": "focused future"
       }
     },
     {

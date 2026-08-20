@@ -149,3 +149,12 @@ test("policy comparison identifies pages by URL when catalog IDs change", () => 
 
   assert.deepEqual(comparePolicySnapshots(baseline, current), { changes: [], unverified: [] });
 });
+
+test("policy comparison ignores targets no longer monitored by the catalog", () => {
+  const baseline = {
+    robots: { example: { state: "available", hash: "old" } },
+    pages: { example: { url: "https://example.com/", state: "available", signals: {} } },
+  };
+
+  assert.deepEqual(comparePolicySnapshots(baseline, {}), { changes: [], unverified: [] });
+});

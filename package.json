@@ -9,6 +9,7 @@
     "audit:catalog": "node scripts/audit-sources.mjs validate",
     "audit:links": "node scripts/audit-sources.mjs links",
     "audit:policies": "node scripts/audit-sources.mjs policies",
+    "prune:catalog": "node scripts/apply-pruning-audit.mjs",
     "test:audit": "node --test scripts/audit-sources.test.mjs"
   },
   "devDependencies": {
